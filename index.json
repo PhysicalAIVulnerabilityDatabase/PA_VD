@@ -1,0 +1,228 @@
+[
+  {
+    "cve_id": "CVE-2026-1442",
+    "title": "Unitree Firmware Update Forgery via Hard-coded TEA Cryptographic Key Material (UPK/TEA Broken Integrity)",
+    "published": "2026-02-27",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Mobile Robot & AMR",
+      "Humanoid Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Broken firmware OTA integrity",
+      "Hard-coded TEA symmetric key",
+      "Missing asymmetric code signing",
+      "Missing Robot PKI",
+      "Fleet-wide supply chain risk",
+      "Firmware forgery (proven)",
+      "MQTT delivery vector (unresolved)",
+      "Affects all Unitree product lines (Go1/Go2/G1)"
+    ],
+    "file_name": "CVE-2026-1442.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-8153",
+    "title": "Universal Robots PolyScope Dashboard Server OS Command Injection Enables Unauthenticated Network RCE",
+    "published": "2026-05-08",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Industrial Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Universal Robots"
+    ],
+    "tags": [
+      "OS command injection",
+      "Unauthenticated robot controller interface",
+      "Industrial cobot RCE",
+      "OT network lateral movement",
+      "URScript execution",
+      "Dashboard Server protocol",
+      "Safety system bypass risk",
+      "Manufacturing environment physical impact"
+    ],
+    "file_name": "CVE-2026-8153.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-22773",
+    "title": "vLLM Idefics3 Vision Model Tensor Dimension Mismatch Allows Unauthenticated Remote DoS Against Robot AI Inference Engine",
+    "published": "2026-01-10",
+    "score": 7.5,
+    "domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure",
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "vLLM Project (vllm-project)"
+    ],
+    "tags": [
+      "vLLM inference engine DoS",
+      "VLM vision-language model attack",
+      "Idefics3 tensor dimension mismatch",
+      "Robot AI availability attack",
+      "Multimodal model input validation",
+      "GPU inference server crash",
+      "Fleet-wide robot AI disruption",
+      "Edge-case image input exploitation",
+      "Physical AI infrastructure denial of service"
+    ],
+    "file_name": "CVE-2026-22773.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-25874",
+    "title": "Hugging Face LeRobot Unsafe Pickle Deserialization over Unauthenticated gRPC Enables Network RCE",
+    "published": "2026-04-23",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "domains": [
+      "Embodied AI Agent",
+      "Robot Operating Systems & Middleware",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Hugging Face"
+    ],
+    "tags": [
+      "gRPC",
+      "Unsafe pickle deserialization",
+      "Unauthenticated inference API",
+      "Embodied AI policy hijacking",
+      "Edge robotics RCE",
+      "Missing TLS on robot communication channel",
+      "AI inference pipeline compromise",
+      "Physical action injection via AI model"
+    ],
+    "file_name": "CVE-2026-25874.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-27510",
+    "title": "Unitree Go2 Mobile Program Tampering and Marketplace Distribution Enable Root RCE",
+    "published": "2026-02-26",
+    "score": 8.7,
+    "domains": [
+      "Mobile Robot & AMR",
+      "Physical AI Infrastructure",
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Robotics supply chain attack",
+      "Mobile companion app trust boundary",
+      "Marketplace one-to-many fleet compromise",
+      "Edge robotics root execution",
+      "Human-in-the-loop trigger dependency",
+      "Missing code-signing / integrity verification",
+      "User-created programme execution"
+    ],
+    "file_name": "CVE-2026-27510.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-27509",
+    "title": "Unitree Go2 Missing DDS Authentication Enables Adjacent RCE",
+    "score": 8.5,
+    "domains": [
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "DDS",
+      "ROS-like middleware pattern",
+      "Edge robotics execution",
+      "Human-in-the-loop trigger dependency"
+    ],
+    "file_name": "CVE-2026-27509.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2023-47335",
+    "title": "Autel Robotics EVO Nano Insecure setNFZEnable Permissions Allow Adjacent Attacker to Bypass Geo-Fence",
+    "published": "2023-11-16",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Autel Robotics"
+    ],
+    "tags": [
+      "Geo-fence bypass",
+      "No-Fly Zone (NFZ) circumvention",
+      "Drone airspace safety violation",
+      "GPS-based safety system defeat",
+      "Adjacent network drone attack",
+      "Safety-critical permission misconfiguration",
+      "Aviation regulatory non-compliance via firmware exploit",
+      "Consumer drone physical safety impact"
+    ],
+    "file_name": "CVE-2023-47335.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2025-23356",
+    "title": "NVIDIA Isaac Lab SB3 Configuration Parser Missing Authentication Enables Local RCE and Robot Policy Poisoning",
+    "published": "2025-10-14",
+    "score": 8.4,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure",
+      "Humanoid Robot"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "Robot AI training pipeline attack",
+      "SB3 Stable-Baselines3 vulnerability",
+      "YAML unsafe deserialization",
+      "Robot policy supply chain poisoning",
+      "MLOps for robotics security",
+      "GPU training host local RCE",
+      "Embodied AI policy integrity",
+      "NVIDIA Isaac Sim ecosystem",
+      "GR00T humanoid robot training framework"
+    ],
+    "file_name": "CVE-2025-23356.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-26741",
+    "title": "PX4 Autopilot Auto-to-Manual Mode Switch Missing Throttle Safety Check Causes Drone Flyaway",
+    "published": "2026-03-10",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Dronecode / PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4 Autopilot flight stack",
+      "MAVLink protocol",
+      "Drone flyaway",
+      "Mode transition safety check",
+      "Throttle guard missing",
+      "Post-landing ARMED state attack window",
+      "Flight controller logic flaw",
+      "Aviation safety violation",
+      "Open-source drone ecosystem vulnerability"
+    ],
+    "file_name": "CVE-2026-26741.pavt.json"
+  }
+]
