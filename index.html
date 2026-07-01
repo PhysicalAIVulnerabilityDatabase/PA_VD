@@ -122,8 +122,54 @@ async function loadIndex() {
       applyFilters();
     }
 
-    function exportJSON() { /* 同之前 */ alert("已匯出 " + currentResults.length + " 筆"); }
-    function exportCSV() { alert("已匯出 CSV"); }
+    // function exportJSON() { /* 同之前 */ alert("已匯出 " + currentResults.length + " 筆"); }
+    // function exportCSV() { alert("已匯出 CSV"); }
+
+function exportJSON() {
+  if (currentResults.length === 0) {
+    alert("目前沒有資料可匯出");
+    return;
+  }
+  const dataStr = JSON.stringify(currentResults, null, 2);
+  downloadFile(dataStr, `pavt_export_${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+}
+
+function exportCSV() {
+  if (currentResults.length === 0) {
+    alert("目前沒有資料可匯出");
+    return;
+  }
+
+  let csvContent = "CVE ID,Title,Score,Severity,Domains,Vendors,Tags\n";
+
+  currentResults.forEach(item => {
+    const row = [
+      `"${item.cve_id || ''}"`,
+      `"${(item.title || '').replace(/"/g, '""')}"`,
+      item.score || '',
+      `"${item.severity || ''}"`,
+      `"${(item.domains || []).join('; ')}"`,
+      `"${(item.vendors || []).join('; ')}"`,
+      `"${(item.tags || []).join('; ')}"`
+    ].join(',');
+    csvContent += row + "\n";
+  });
+
+  downloadFile(csvContent, `pavt_export_${new Date().toISOString().slice(0,10)}.csv`, 'text/csv;charset=utf-8;');
+}
+
+function downloadFile(content, filename, mimeType) {
+  const blob = new Blob([content], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
 
     window.onload = loadIndex;
   </script>
