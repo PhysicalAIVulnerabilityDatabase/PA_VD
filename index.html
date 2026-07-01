@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAVT Vulnerability Explorer v1.1</title>
+  <title>Physical AI Vulnerability Explorer</title>
   <style>
     :root { --primary: #2563eb; }
     body { font-family: system-ui, sans-serif; margin:0; background:#f8fafc; }
@@ -37,10 +37,26 @@
       max-height: 90vh; overflow-y: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
     .close { float:right; font-size:28px; cursor:pointer; }
+
+    /* Sponsor */
+    .sponsor {
+      position: fixed;
+      bottom: 15px;
+      right: 20px;
+      font-size: 0.85rem;
+      color: #64748b;
+      background: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+    .sponsor a { color: #2563eb; text-decoration: none; }
+    .sponsor a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <header><h1>PAVT Vulnerability Explorer v1.1</h1></header>
+  <header><h1>Physical AI Vulnerability Explorer</h1></header>
   <div class="container">
     <aside class="sidebar">
       <h2>🔍 Search & Filter</h2>
@@ -85,6 +101,11 @@
       <h2 id="modal-title"></h2>
       <pre id="modal-content" style="background:#f8fafc;padding:20px;border-radius:8px;overflow:auto;max-height:70vh;font-size:0.9rem;"></pre>
     </div>
+  </div>
+
+  <!-- Sponsor -->
+  <div class="sponsor">
+    Sponsored by <a href="https://vicone.com" target="_blank">VicOne Inc.</a>
   </div>
 
   <script>
