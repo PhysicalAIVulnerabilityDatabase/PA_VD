@@ -62,19 +62,28 @@
       timeout = setTimeout(applyFilters, 150);
     }
 
-    async function loadIndex() {
-      updateStatus("載入索引中...", 30);
-      try {
-        const res = await fetch('index.json', {cache: 'no-store'});
-        if (res.ok) {
-          allMetadata = await res.json();
-          updateStatus(`已載入 ${allMetadata.length} 筆 CVE`, 100);
-          applyFilters();
-        }
-      } catch(e) {
-        updateStatus("❌ 載入失敗", 0);
-      }
+async function loadIndex() {
+  updateStatus("載入索引中...", 30);
+  const timestamp = new Date().getTime();   // 防快取
+  
+  try {
+    const res = await fetch(`index.json?v=${timestamp}`, { 
+      cache: 'no-store',
+      headers: { 'Pragma': 'no-cache' }
+    });
+    
+    if (res.ok) {
+      allMetadata = await res.json();
+      updateStatus(`已載入 ${allMetadata.length} 筆 CVE`, 100);
+      applyFilters();
+    } else {
+      updateStatus(`❌ HTTP ${res.status}`, 0);
     }
+  } catch(e) {
+    updateStatus("❌ 載入失敗", 0);
+    console.error(e);
+  }
+}
 
     function updateStatus(text, percent) {
       document.getElementById("status-text").textContent = text;
