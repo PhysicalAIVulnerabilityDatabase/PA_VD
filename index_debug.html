@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAVT Vulnerability Explorer - 診斷版</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 20px; background: #f8fafc; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .error { color: #dc2626; }
+    .success { color: #16a34a; }
+  </style>
+</head>
+<body>
+  <h1>PAVT Vulnerability Explorer - 診斷模式</h1>
+  
+  <div class="card">
+    <h2>📊 診斷資訊</h2>
+    <pre id="log"></pre>
+  </div>
+
+  <script>
+    const log = document.getElementById('log');
+
+    function addLog(msg, type = 'info') {
+      const color = type === 'success' ? 'success' : type === 'error' ? 'error' : '';
+      log.innerHTML += `<span class="${color}">[${new Date().toLocaleTimeString()}] ${msg}</span><br>`;
+      console.log(msg);
+    }
+
+    async function testIndex() {
+      addLog("開始測試 index.json...");
+
+      const paths = ['./index.json', 'index.json', '/index.json'];
+      
+      for (let path of paths) {
+        addLog(`嘗試路徑: ${path}`);
+        try {
+          const res = await fetch(path, { 
+            cache: 'no-store',
+            headers: { 'Pragma': 'no-cache' }
+          });
+          
+          addLog(`HTTP 狀態: ${res.status} ${res.statusText}`, res.ok ? 'success' : 'error');
+          
+          if (res.ok) {
+            const data = await res.json();
+            addLog(`✅ 成功載入！共 ${data.length} 筆 CVE`, 'success');
+            addLog(`第一筆範例: ${data[0]?.cve_id || '無資料'}`);
+            return data;
+          }
+        } catch (e) {
+          addLog(`❌ 失敗: ${e.message}`, 'error');
+        }
+      }
+      
+      addLog("❌ 所有路徑都無法載入 index.json", 'error');
+      addLog("請確認：");
+      addLog("1. index.json 是否真的在網站根目錄？");
+      addLog("2. GitHub Pages 是否已重新部署？");
+      addLog("3. 瀏覽器開發者工具 (F12) → Network 有沒有看到 404？");
+    }
+
+    // 執行測試
+    window.onload = testIndex;
+  </script>
+</body>
+</html>
