@@ -3,65 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAVT Vulnerability Explorer v1.1 - 大規模版</title>
+  <title>PAVT Vulnerability Explorer - 診斷版</title>
   <style>
-    :root { --primary: #2563eb; }
-    body { font-family: system-ui, sans-serif; margin:0; background:#f8fafc; }
-    header { background:white; padding:1.5rem; border-bottom:1px solid #e2e8f0; }
-    h1 { margin:0; color:var(--primary); }
-    .container { display:flex; max-width:1400px; margin:20px auto; padding:0 20px; gap:20px; }
-    .sidebar { width:320px; background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:20px; position:sticky; top:20px; height:fit-content; }
-    .main { flex:1; }
-    .search-box { width:100%; padding:12px; border:2px solid #e2e8f0; border-radius:8px; font-size:1rem; }
-    
-    .status-bar {
-      height: 6px;
-      background: var(--primary);
-      width: 0%;
-      transition: width 0.3s;
-      margin: 8px 0;
-      border-radius: 3px;
-    }
-    .status-text { font-size: 0.9rem; color: #64748b; margin: 5px 0; }
-
-    .results { background:white; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); padding:20px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 18px; }
-    .cve-card { border:1px solid #e2e8f0; border-radius:12px; padding:18px; cursor:pointer; transition:all 0.2s; }
-    .cve-card:hover { transform:translateY(-4px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
-    .severity.HIGH { background:#fee2e2; color:#b91c1c; padding:4px 12px; border-radius:9999px; font-size:0.85rem; }
-    .tag { background:#e0f2fe; color:#0369a1; padding:2px 8px; border-radius:9999px; font-size:0.8rem; margin:2px; }
+    body { font-family: system-ui, sans-serif; margin: 20px; background: #f8fafc; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    .error { color: #dc2626; }
+    .success { color: #16a34a; }
   </style>
 </head>
 <body>
-  <header><h1>PAVT Vulnerability Explorer v1.1 (大規模模式)</h1></header>
-
-  <div class="container">
-    <aside class="sidebar">
-      <h2>🔍 複合搜尋</h2>
-      <input type="text" id="keyword" class="search-box" placeholder="CVE ID、標題..." onkeyup="debouncedSearch()">
-
-      <div id="status-container">
-        <div class="status-bar" id="status-bar"></div>
-        <div class="status-text" id="status-text">準備就緒</div>
-      </div>
-
-      <button onclick="resetFilters()" style="width:100%;padding:12px;margin-top:15px;">重置</button>
-    </aside>
-
-    <div class="main">
-      <div class="results">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-          <strong>找到 <span id="result-count">0</span> 個漏洞</strong>
-          <div>
-            <button onclick="exportJSON()" class="btn">匯出 JSON</button>
-            <button onclick="exportCSV()" class="btn">匯出 CSV</button>
-          </div>
-        </div>
-        <div id="results-grid" class="grid"></div>
-      </div>
-    </div>
+  <h1>PAVT Vulnerability Explorer - 診斷模式</h1>
+  
+  <div class="card">
+    <h2>📊 診斷資訊</h2>
+    <pre id="log"></pre>
   </div>
 
-  <script src="app.js"></script>
+  <script>
+    const log = document.getElementById('log');
+
+    function addLog(msg, type = 'info') {
+      const color = type === 'success' ? 'success' : type === 'error' ? 'error' : '';
+      log.innerHTML += `<span class="${color}">[${new Date().toLocaleTimeString()}] ${msg}</span><br>`;
+      console.log(msg);
+    }
+
+    async function testIndex() {
+      addLog("開始測試 index.json...");
+
+      const paths = ['./index.json', 'index.json', '/index.json'];
+      
+      for (let path of paths) {
+        addLog(`嘗試路徑: ${path}`);
+        try {
+          const res = await fetch(path, { 
+            cache: 'no-store',
+            headers: { 'Pragma': 'no-cache' }
+          });
+          
+          addLog(`HTTP 狀態: ${res.status} ${res.statusText}`, res.ok ? 'success' : 'error');
+          
+          if (res.ok) {
+            const data = await res.json();
+            addLog(`✅ 成功載入！共 ${data.length} 筆 CVE`, 'success');
+            addLog(`第一筆範例: ${data[0]?.cve_id || '無資料'}`);
+            return data;
+          }
+        } catch (e) {
+          addLog(`❌ 失敗: ${e.message}`, 'error');
+        }
+      }
+      
+      addLog("❌ 所有路徑都無法載入 index.json", 'error');
+      addLog("請確認：");
+      addLog("1. index.json 是否真的在網站根目錄？");
+      addLog("2. GitHub Pages 是否已重新部署？");
+      addLog("3. 瀏覽器開發者工具 (F12) → Network 有沒有看到 404？");
+    }
+
+    // 執行測試
+    window.onload = testIndex;
+  </script>
 </body>
 </html>
