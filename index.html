@@ -118,16 +118,46 @@
       timeout = setTimeout(applyFilters, 180); 
     }
 
-    async function loadIndex() {
-      try {
-        const res = await fetch(`index.json?v=${Date.now()}`);
-        allMetadata = await res.json();
-        renderFilters();
-        applyFilters();
-      } catch(e) { 
-        console.error("Failed to load index.json", e); 
-      }
+async function loadIndex() {
+  try {
+    const res = await fetch(`index.json?v=${Date.now()}`);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    allMetadata = await res.json();
+    
+    console.log(`✅ 成功載入 ${allMetadata.length} 筆 CVE`); // 除錯用
+    renderFilters();
+    applyFilters();
+  } catch(e) { 
+    console.error("Failed to load index.json", e); 
+    alert("Failed to load index.json. Please check console (F12)");
+  }
+}
+
+function renderResults(items) {
+  const keyword = document.getElementById("keyword").value.toLowerCase().trim();
+  const html = items.map(item => {
+    let title = item.title || 'No Title';
+    if (keyword) {
+      title = title.replace(new RegExp(`(${keyword})`, 'gi'), '<span class="highlight">$1</span>');
     }
+    const fileName = item.file_name || `${item.cve_id}.pavt.json`;
+    
+    return `
+      <div class="cve-card" onclick="showDetail('${item.cve_id}', '${fileName}')">
+        <div style="font-weight:bold;color:#2563eb">${item.cve_id}</div>
+        <p>${title}</p>
+        <div style="margin-top:8px;">
+          <span style="background:#fee2e2;color:#b91c1c;padding:4px 12px;border-radius:999px;font-size:0.85rem;">
+            ${item.severity || 'UNKNOWN'} ${item.score || ''}
+          </span>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  document.getElementById("results-grid").innerHTML = html || 
+    '<p style="padding:80px;text-align:center;color:#888;">No matching vulnerabilities found</p>';
+}
 
     function renderFilters() {
       const domains = [...new Set(allMetadata.flatMap(i => i.domains || []))].sort();
