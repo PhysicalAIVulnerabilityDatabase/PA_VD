@@ -149,13 +149,27 @@
     function closeModal() { document.getElementById("detail-modal").style.display = "none"; }
     function resetFilters() { document.getElementById("keyword").value = ""; document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false); applyFilters(); }
 
-    function exportJSON() { if(currentResults.length===0) return alert("No data"); downloadFile(JSON.stringify(currentResults,null,2), `pavt_export_${new Date().toISOString().slice(0,10)}.json`, 'application/json'); }
-    function exportCSV() { /* 省略 */ alert("CSV exported"); }
+     function exportJSON() {
+      if (currentResults.length === 0) return alert("No data to export");
+      const str = JSON.stringify(currentResults, null, 2);
+      downloadFile(str, `pavt_export_${new Date().toISOString().slice(0,10)}.json`, 'application/json');
+    }
+
+    function exportCSV() {
+      if (currentResults.length === 0) return alert("No data to export");
+      let csv = "CVE ID,Title,Score,Severity,Domains,Vendors,Tags\n";
+      currentResults.forEach(i => {
+        csv += `"${i.cve_id}","${(i.title||'').replace(/"/g,'""')}","${i.score||''}","${i.severity||''}","${(i.domains||[]).join('; ')}","${(i.vendors||[]).join('; ')}","${(i.tags||[]).join('; ')}"\n`;
+      });
+      downloadFile(csv, `pavt_export_${new Date().toISOString().slice(0,10)}.csv`, 'text/csv');
+    }
 
     function downloadFile(content, filename, type) {
       const blob = new Blob([content], {type});
       const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href=url; a.download=filename; a.click(); URL.revokeObjectURL(url);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename; a.click();
+      URL.revokeObjectURL(url);
     }
 
     window.onload = loadIndex;
