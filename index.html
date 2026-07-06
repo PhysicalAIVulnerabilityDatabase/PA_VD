@@ -119,19 +119,29 @@
     }
 
 async function loadIndex() {
-  try {
-    const res = await fetch(`index.json?v=${Date.now()}`);
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    allMetadata = await res.json();
-    
-    console.log(`✅ 成功載入 ${allMetadata.length} 筆 CVE`); // 除錯用
-    renderFilters();
-    applyFilters();
-  } catch(e) { 
-    console.error("Failed to load index.json", e); 
-    alert("Failed to load index.json. Please check console (F12)");
+    console.log("🚀 開始載入 index.json...");
+    try {
+      const timestamp = Date.now();
+      const res = await fetch(`index.json?v=${timestamp}`);
+      
+      console.log(`📡 Fetch 狀態: ${res.status} ${res.statusText}`);
+      
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      
+      allMetadata = await res.json();
+      
+      console.log(`✅ 成功載入 ${allMetadata.length} 筆 CVE`);
+      console.table(allMetadata.slice(0,3)); // 顯示前3筆方便檢查
+      
+      renderFilters();
+      applyFilters();
+    } catch(e) { 
+      console.error("❌ 載入 index.json 失敗:", e);
+      alert("Failed to load index.json.\n\nError: " + e.message + "\n\nPlease check if index.json exists in the repository root.");
+    }
   }
-}
 
 function renderResults(items) {
   const keyword = document.getElementById("keyword").value.toLowerCase().trim();
