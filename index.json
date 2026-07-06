@@ -76,6 +76,28 @@
     "file_name": "CVE-2025-60250.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32057",
+    "title": "OpenClaw Trusted-Proxy Control UI Pairing Bypass Allows Node Role to Access Node Event Execution Without Pairing",
+    "published": "2026-03-03",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "trusted-proxy",
+      "client-id-spoofing",
+      "pairing-bypass",
+      "role-escalation"
+    ],
+    "file_name": "CVE-2026-32057.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53821",
     "title": "OpenClaw WebSocket Client-Declared Scope Pre-Authorization Allows Unpaired Clients to Obtain Cached operator.admin Authority",
     "published": "2026-06-13",
@@ -99,6 +121,28 @@
     "file_name": "CVE-2026-53821.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-28457",
+    "title": "OpenClaw Sandbox Skill Mirroring Path Traversal via Unsanitized Name Parameter Allows Write Outside Workspace",
+    "published": "2026-03-05",
+    "score": 5.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "path-traversal",
+      "skill-package",
+      "supply-chain",
+      "sandbox-escape"
+    ],
+    "file_name": "CVE-2026-28457.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53819",
     "title": "OpenClaw Workspace .env Override of Homebrew Executable Selection Enables Arbitrary Code Execution in Skill Install Flows",
     "published": "2026-07-02",
@@ -120,6 +164,29 @@
       "workspace-security"
     ],
     "file_name": "CVE-2026-53819.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32034",
+    "title": "OpenClaw Control UI Insecure Authentication over Plaintext HTTP Allows Privileged Access Bypass",
+    "published": "2026-03-19",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "Control-UI",
+      "insecure-auth",
+      "HTTP",
+      "credential-interception",
+      "device-identity-bypass"
+    ],
+    "file_name": "CVE-2026-32034.pavd.json"
   },
   {
     "cve_id": "CVE-2025-2894",
@@ -189,6 +256,28 @@
       "SSRF"
     ],
     "file_name": "CVE-2026-53827.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-28448",
+    "title": "OpenClaw Twitch Plugin allowFrom Enforcement Bypass Allows Unauthorized Users to Trigger AI Agent Pipeline",
+    "published": "2026-03-05",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "AI-agent",
+      "access-control",
+      "Twitch",
+      "allowlist-bypass"
+    ],
+    "file_name": "CVE-2026-28448.pavd.json"
   },
   {
     "cve_id": "CVE-2026-1442",
@@ -394,6 +483,29 @@
     "file_name": "CVE-2026-53818.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32014",
+    "title": "OpenClaw Node Reconnect Metadata Spoofing Bypasses Platform-Based Command Policy via Unsigned Fields",
+    "published": "2026-03-19",
+    "score": 8.6,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "metadata-spoofing",
+      "reconnect",
+      "policy-bypass",
+      "platform-field",
+      "unsigned"
+    ],
+    "file_name": "CVE-2026-32014.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-4374",
     "title": "RTI Connext Professional XML External Entity Injection in DDS Service Components Enabling Data Exfiltration and Denial of Service",
     "published": "2026-04-01",
@@ -536,6 +648,49 @@
     "file_name": "CVE-2026-41352.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32044",
+    "title": "OpenClaw tar.bz2 Skill Archive Safety Bypass Enables Local Denial of Service During Skill Installation",
+    "published": "2026-03-21",
+    "score": 4.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "tar.bz2",
+      "archive-safety",
+      "skill-install",
+      "DoS",
+      "supply-chain"
+    ],
+    "file_name": "CVE-2026-32044.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-26461",
+    "title": "Aver PTC320UV2 PTZ Camera Web Interface Command Injection Enables Unauthenticated Remote Code Execution",
+    "published": "2026-05-01",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Aver"
+    ],
+    "tags": [
+      "PTZ-camera",
+      "command-injection",
+      "physical-security",
+      "vision-sensor"
+    ],
+    "file_name": "CVE-2026-26461.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-7368",
     "title": "Yarbo Cloud MQTT Missing Per-Device Authorization Fleet-Wide Unauthorized Robot Command Execution",
     "published": "2026-06-12",
@@ -642,6 +797,51 @@
     "file_name": "CVE-2026-53845.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-35648",
+    "title": "OpenClaw Queued Node Actions Not Revalidated Against Tightened Policy Enabling Stale Allowlist Bypass",
+    "published": "2026-03-26",
+    "score": 3.7,
+    "severity": "LOW",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "stale-policy",
+      "queued-actions",
+      "policy-bypass",
+      "deferred-execution"
+    ],
+    "file_name": "CVE-2026-35648.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32041",
+    "title": "OpenClaw Browser Control Startup Auth Bootstrap Failure Exposes Evaluate-Capable Routes Without Authentication",
+    "published": "2026-03-02",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "browser-control",
+      "fail-open",
+      "evaluate",
+      "unauthenticated",
+      "SSRF"
+    ],
+    "file_name": "CVE-2026-32041.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-42432",
     "title": "OpenClaw Node Pairing Reconnect Bypasses operator.admin Scope Enabling Local Privilege Escalation to Exec Capability",
     "published": "2026-04-28",
@@ -714,6 +914,97 @@
     "file_name": "CVE-2023-3104.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-33574",
+    "title": "OpenClaw Skills Download Tools Root Path Rebinding TOCTOU Allows Write Outside Intended Tools Directory",
+    "published": "2026-03-12",
+    "score": 4.7,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "TOCTOU",
+      "path-rebinding",
+      "skills-download",
+      "symlink-attack"
+    ],
+    "file_name": "CVE-2026-33574.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-26011",
+    "title": "ros-navigation Nav2 AMCL Heap Out-of-Bounds Write Enables Navigation Denial of Service and Potential Code Execution",
+    "published": "2026-02-12",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR",
+      "Humanoid Robot"
+    ],
+    "vendors": [
+      "ros-navigation"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS",
+      "navigation",
+      "AMCL",
+      "particle-filter",
+      "heap-OOB"
+    ],
+    "file_name": "CVE-2026-26011.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-28460",
+    "title": "OpenClaw system.run Allowlist Bypass via Shell Line-Continuation Command Substitution Enables Non-Allowlisted Command Execution",
+    "published": "2026-03-19",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "command-injection",
+      "allowlist-bypass",
+      "shell-obfuscation",
+      "line-continuation"
+    ],
+    "file_name": "CVE-2026-28460.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32905",
+    "title": "OpenClaw Device Pairing Plugin Authorization Bypass Allows Non-Owner Chat Senders to Issue Persistent Operator/Node Bootstrap Codes",
+    "published": "2026-05-29",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "device-pairing",
+      "bootstrap-code",
+      "persistent-credentials",
+      "chat-command",
+      "authorization-bypass"
+    ],
+    "file_name": "CVE-2026-32905.pavd.json"
+  },
+  {
     "cve_id": "CVE-2023-47335",
     "title": "Autel Robotics EVO Nano Insecure setNFZEnable Permissions Allow Adjacent Attacker to Bypass Geo-Fence",
     "published": "2023-11-16",
@@ -754,6 +1045,52 @@
     "file_name": "CVE-2026-7414.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-28472",
+    "title": "OpenClaw Gateway WebSocket Device Identity Check Bypass Enables Unauthenticated Operator Access",
+    "published": "2026-03-05",
+    "score": 9.2,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "gateway",
+      "WebSocket",
+      "auth-bypass",
+      "device-identity",
+      "operator-access"
+    ],
+    "file_name": "CVE-2026-28472.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-27510",
+    "title": "Unitree Go2 Android App Missing Integrity Verification Allows Tampered Python Programs to Execute as Root",
+    "published": "2026-02-26",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Humanoid Robot",
+      "Mobile Companion App"
+    ],
+    "vendors": [
+      "UnitreeRobotics"
+    ],
+    "tags": [
+      "Unitree",
+      "Go2",
+      "mobile-app",
+      "supply-chain",
+      "marketplace",
+      "no-code-signing"
+    ],
+    "file_name": "CVE-2026-27510.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-41386",
     "title": "OpenClaw Unbound Bootstrap Setup Codes Enable Privilege Escalation During First-Use Device Pairing",
     "published": "2026-04-28",
@@ -774,6 +1111,30 @@
       "zero-auth-escalation"
     ],
     "file_name": "CVE-2026-41386.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-27509",
+    "title": "Unitree Go2 DDS Missing Authentication Enables Adjacent Network Root Code Execution via Persistent Keybinding",
+    "published": "2026-02-26",
+    "score": 8.5,
+    "severity": "HIGH",
+    "domains": [
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "UnitreeRobotics"
+    ],
+    "tags": [
+      "Unitree",
+      "Go2",
+      "quadruped",
+      "DDS",
+      "no-auth",
+      "root-RCE",
+      "persistent-keybinding"
+    ],
+    "file_name": "CVE-2026-27509.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7413",
@@ -934,6 +1295,29 @@
       "unauthenticated pub/sub"
     ],
     "file_name": "CVE-2026-7415.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32025",
+    "title": "OpenClaw Browser-Origin WebSocket Auth Hardening Gap Enables Loopback Password Brute-Force and Operator Session Hijack",
+    "published": "2026-03-19",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "OpenClaw",
+      "brute-force",
+      "loopback",
+      "origin-bypass",
+      "WebSocket",
+      "cross-site"
+    ],
+    "file_name": "CVE-2026-32025.pavd.json"
   },
   {
     "cve_id": "CVE-2025-45467",
