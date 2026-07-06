@@ -148,6 +148,34 @@
     "file_name": "CVE-2026-8153.pavt.json"
   },
   {
+    "cve_id": "CVE-2025-60251",
+    "title": "Unitree Go2/G1/H1/B2 BLE Weak Handshake Authentication Bypass Enables Adjacent Robot Fleet Takeover",
+    "published": "2025-09-25",
+    "score": 5.0,
+    "severity": "MEDIUM",
+    "domains": [
+      "Humanoid Robot",
+      "Mobile Robot & AMR",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Unitree Robotics",
+      "BLE robot attack",
+      "hardcoded cryptographic key",
+      "authentication bypass",
+      "wormable robot exploit",
+      "adjacent network",
+      "humanoid robot security",
+      "quadruped robot security",
+      "UniPwn",
+      "physical robot takeover"
+    ],
+    "file_name": "CVE-2025-60251.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-22773",
     "title": "vLLM Idefics3 Vision Model Tensor Dimension Mismatch Allows Unauthenticated Remote DoS Against Robot AI Inference Engine",
     "published": "2026-01-10",
