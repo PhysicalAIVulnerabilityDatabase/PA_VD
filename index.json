@@ -1,5 +1,66 @@
 [
   {
+    "cve_id": "CVE-2025-60250",
+    "title": "Unitree Go2/G1/H1/B2 Hardcoded AES-CFB128 Key Enables BLE Packet Forgery and Root Takeover Across Entire Robot Product Line",
+    "published": "2025-09-26",
+    "score": 4.7,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Hardcoded cryptographic key in robot firmware",
+      "BLE robot attack",
+      "Unitree Robotics",
+      "Quadruped robot security",
+      "Humanoid robot firmware vulnerability",
+      "Wormable robot exploit",
+      "Robot botnet",
+      "Physical robot root takeover",
+      "Multi-CVE exploit chain (CWE-321 + CWE-306 + CWE-78)",
+      "Robot BLE provisioning attack",
+      "Wireless adjacent attack vector",
+      "Police and military robot deployment risk",
+      "Covert robot surveillance",
+      "UniPwn exploit framework",
+      "Physical AI safety impact",
+      "IoT firmware cryptographic weakness"
+    ],
+    "file_name": "CVE-2025-60250.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-2894",
+    "title": "Unitree Go1 Quadruped Robot CloudSail Undocumented Backdoor Enables Complete Remote Control via NAT-Traversal Tunnel",
+    "published": "2025-03-27",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot",
+      "Mobile Robot & AMR",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Unitree Robotics",
+      "Oray (Zhexi Technology)"
+    ],
+    "tags": [
+      "supply_chain_embedded_backdoor",
+      "IoT_remote_access",
+      "chinese_vendor_trust",
+      "default_credentials",
+      "robot_physical_safety",
+      "NAT_traversal_abuse",
+      "military_law_enforcement_risk",
+      "network_lateral_movement"
+    ],
+    "file_name": "CVE-2025-2894.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1442",
     "title": "Unitree Firmware Update Forgery via Hard-coded TEA Cryptographic Key Material (UPK/TEA Broken Integrity)",
     "published": "2026-02-27",
@@ -25,6 +86,41 @@
       "Affects all Unitree product lines (Go1/Go2/G1)"
     ],
     "file_name": "CVE-2026-1442.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2025-60017",
+    "title": "Unitree Go2/G1/H1/B2 BLE-Triggered OS Command Injection via hostapd_restart.sh Enables Root RCE Across Robot Fleet",
+    "published": "2025-09-25",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "BLE command injection",
+      "Wormable robot firmware",
+      "Unitree quadruped security",
+      "Unitree humanoid security",
+      "Robot WiFi attack surface",
+      "Adjacent network RCE",
+      "Root-privileged robot daemon",
+      "Robot fleet compromise",
+      "IoT embedded robot vulnerability",
+      "National security robot risk",
+      "Austin Hackers Anonymous disclosure",
+      "UniPwn exploit chain",
+      "Hardcoded cryptographic key",
+      "Robot authentication bypass",
+      "Physical AI firmware security",
+      "Law enforcement robot vulnerability",
+      "CCP supply chain concern"
+    ],
+    "file_name": "CVE-2025-60017.pavd.json"
   },
   {
     "cve_id": "CVE-2026-8153",
@@ -171,6 +267,40 @@
       "Consumer drone physical safety impact"
     ],
     "file_name": "CVE-2023-47335.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2025-35027",
+    "title": "Unitree Robotics BLE WiFi Command Injection Enables Adjacent Root RCE on Go2/G1/H1/B2 Robots (wpa_supplicant_restart.sh)",
+    "published": "2025-09-26",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Humanoid Robot",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "BLE command injection",
+      "Unitree Robotics",
+      "quadruped robot vulnerability",
+      "humanoid robot security",
+      "wormable robot exploit",
+      "hardcoded credentials in robot firmware",
+      "adjacent network RCE",
+      "robot fleet compromise",
+      "mobile robot attack surface",
+      "physical safety risk",
+      "firmware persistence",
+      "robot telemetry exfiltration",
+      "UniPwn",
+      "law enforcement robot vulnerability",
+      "MIT Cheetah firmware",
+      "robot botnet"
+    ],
+    "file_name": "CVE-2025-35027.pavd.json"
   },
   {
     "cve_id": "CVE-2025-23356",
