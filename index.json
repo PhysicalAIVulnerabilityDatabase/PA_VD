@@ -1,5 +1,47 @@
 [
   {
+    "cve_id": "CVE-2026-41909",
+    "title": "OpenClaw Improper Authorization in Paired-Device Pairing Management Allows Cross-Request Interference",
+    "published": "2026-04-23",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "pairing-management",
+      "idor",
+      "gateway-trust-boundary"
+    ],
+    "file_name": "CVE-2026-41909.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-56767",
+    "title": "Maxun Cross-Tenant IDOR in Storage and Webhook API Handlers OAuth Token Exposure",
+    "published": "2026-06-25",
+    "score": 8.7,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "getmaxun"
+    ],
+    "tags": [
+      "web-automation",
+      "data-pipeline",
+      "OAuth",
+      "multi-tenant",
+      "IDOR"
+    ],
+    "file_name": "CVE-2026-56767.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-60250",
     "title": "Unitree Go2/G1/H1/B2 Hardcoded AES-CFB128 Key Enables BLE Packet Forgery and Root Takeover Across Entire Robot Product Line",
     "published": "2025-09-26",
@@ -34,6 +76,52 @@
     "file_name": "CVE-2025-60250.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-53821",
+    "title": "OpenClaw WebSocket Client-Declared Scope Pre-Authorization Allows Unpaired Clients to Obtain Cached operator.admin Authority",
+    "published": "2026-06-13",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "websocket-security",
+      "scope-elevation",
+      "pre-auth-bypass",
+      "operator-admin",
+      "control-ui"
+    ],
+    "file_name": "CVE-2026-53821.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53819",
+    "title": "OpenClaw Workspace .env Override of Homebrew Executable Selection Enables Arbitrary Code Execution in Skill Install Flows",
+    "published": "2026-07-02",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "supply-chain",
+      "env-injection",
+      "skill-install",
+      "homebrew",
+      "workspace-security"
+    ],
+    "file_name": "CVE-2026-53819.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-2894",
     "title": "Unitree Go1 Quadruped Robot CloudSail Undocumented Backdoor Enables Complete Remote Control via NAT-Traversal Tunnel",
     "published": "2025-03-27",
@@ -59,6 +147,48 @@
       "network_lateral_movement"
     ],
     "file_name": "CVE-2025-2894.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53838",
+    "title": "OpenClaw Node Pairing Reconnection TOCTOU State Mutation Approval Scope Bypass",
+    "published": "2026-06-12",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "npm",
+      "TypeScript",
+      "node-pairing",
+      "scope-escalation",
+      "reconnection-race"
+    ],
+    "file_name": "CVE-2026-53838.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53827",
+    "title": "OpenClaw message.action SSRF Gateway Credential Exposure via Model-Controlled Loopback URLs",
+    "published": "2026-06-12",
+    "score": 6.0,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "npm",
+      "TypeScript",
+      "gateway-credentials",
+      "model-controlled-metadata",
+      "SSRF"
+    ],
+    "file_name": "CVE-2026-53827.pavd.json"
   },
   {
     "cve_id": "CVE-2026-1442",
@@ -123,6 +253,71 @@
     "file_name": "CVE-2025-60017.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-53850",
+    "title": "OpenClaw Focus Command Missing controlScope Enforcement Unauthorized State Change",
+    "published": "2026-06-16",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "npm",
+      "TypeScript",
+      "focus-command",
+      "controlScope",
+      "authorization-bypass"
+    ],
+    "file_name": "CVE-2026-53850.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53865",
+    "title": "OpenClaw Maintenance Task Workspace-Derived PATH Untrusted Search Path Arbitrary Command Execution",
+    "published": "2026-06-16",
+    "score": 7.2,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "npm",
+      "TypeScript",
+      "PATH-hijacking",
+      "workspace-environment",
+      "arbitrary-execution"
+    ],
+    "file_name": "CVE-2026-53865.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-45006",
+    "title": "OpenClaw Gateway Tool Config Mutation via Incomplete Denylist Bypass Enables Persistent Malicious Configuration by Compromised AI Models",
+    "published": "2026-05-11",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-safety-boundary",
+      "model-compromise",
+      "prompt-injection",
+      "persistent-config",
+      "denylist-bypass",
+      "ai-agent-framework"
+    ],
+    "file_name": "CVE-2026-45006.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-8153",
     "title": "Universal Robots PolyScope Dashboard Server OS Command Injection Enables Unauthenticated Network RCE",
     "published": "2026-05-08",
@@ -174,6 +369,73 @@
       "physical robot takeover"
     ],
     "file_name": "CVE-2025-60251.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53818",
+    "title": "OpenClaw MCP Loopback Feature Allows Non-Owner Callers to Bypass Owner-Only Tool Policies and Hooks",
+    "published": "2026-06-11",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "mcp-security",
+      "tool-policy",
+      "ai-agent-framework",
+      "hook-bypass",
+      "owner-authorization",
+      "mcp-loopback"
+    ],
+    "file_name": "CVE-2026-53818.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-4374",
+    "title": "RTI Connext Professional XML External Entity Injection in DDS Service Components Enabling Data Exfiltration and Denial of Service",
+    "published": "2026-04-01",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Autonomous Vehicle AI",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "RTI"
+    ],
+    "tags": [
+      "dds-middleware",
+      "ros2-infrastructure",
+      "automotive-adas",
+      "fleet-communication",
+      "xml-injection"
+    ],
+    "file_name": "CVE-2026-4374.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-41378",
+    "title": "OpenClaw Paired Node Privilege Escalation to Gateway RCE via Unrestricted node.event Agent Dispatch",
+    "published": "2026-04-28",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "privilege-escalation",
+      "gateway-rce",
+      "node-event-dispatch"
+    ],
+    "file_name": "CVE-2026-41378.pavd.json"
   },
   {
     "cve_id": "CVE-2026-22773",
@@ -253,6 +515,93 @@
     "file_name": "CVE-2026-27510.pavt.json"
   },
   {
+    "cve_id": "CVE-2026-41352",
+    "title": "OpenClaw Device-Paired Node Scope Gate Authentication Bypass Enabling Host Remote Code Execution",
+    "published": "2026-04-23",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "node-authentication",
+      "gateway-security",
+      "physical-ai-control"
+    ],
+    "file_name": "CVE-2026-41352.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-7368",
+    "title": "Yarbo Cloud MQTT Missing Per-Device Authorization Fleet-Wide Unauthorized Robot Command Execution",
+    "published": "2026-06-12",
+    "score": 8.6,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Yarbo"
+    ],
+    "tags": [
+      "MQTT",
+      "IoT",
+      "fleet-management",
+      "hard-coded-credentials",
+      "outdoor-robot",
+      "CISA-ICS"
+    ],
+    "file_name": "CVE-2026-7368.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-8235",
+    "title": "8421bit MiniClaw OS Command Injection in Skill Script Handler Enables AI Agent Host Takeover",
+    "published": "2026-05-10",
+    "score": 2.0,
+    "severity": "LOW",
+    "domains": [
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "8421bit"
+    ],
+    "tags": [
+      "MCP",
+      "AI agent kernel",
+      "skill execution",
+      "command injection",
+      "TypeScript",
+      "host RCE"
+    ],
+    "file_name": "CVE-2026-8235.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-8113",
+    "title": "8421bit MiniClaw executeSkillScript Path Traversal Information Disclosure",
+    "published": "2026-05-07",
+    "score": 2.1,
+    "severity": "LOW",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "8421bit"
+    ],
+    "tags": [
+      "TypeScript",
+      "npm",
+      "skill-execution",
+      "robot-scripting",
+      "kernel"
+    ],
+    "file_name": "CVE-2026-8113.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-27509",
     "title": "Unitree Go2 Missing DDS Authentication Enables Adjacent RCE",
     "score": 8.5,
@@ -270,6 +619,99 @@
       "Human-in-the-loop trigger dependency"
     ],
     "file_name": "CVE-2026-27509.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-53845",
+    "title": "OpenClaw Skill-Command Dispatch Before-Tool-Call Hook Bypass Audit Evasion",
+    "published": "2026-06-16",
+    "score": 2.3,
+    "severity": "LOW",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "npm",
+      "TypeScript",
+      "hook-bypass",
+      "audit-evasion",
+      "skill-dispatch"
+    ],
+    "file_name": "CVE-2026-53845.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-42432",
+    "title": "OpenClaw Node Pairing Reconnect Bypasses operator.admin Scope Enabling Local Privilege Escalation to Exec Capability",
+    "published": "2026-04-28",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "reconnect-bypass",
+      "exec-escalation",
+      "local-privilege-escalation"
+    ],
+    "file_name": "CVE-2026-42432.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-53816",
+    "title": "OpenClaw Paired Node Forges Exec Lifecycle Events Without system.run Authorization Bypassing Provenance Validation",
+    "published": "2026-06-11",
+    "score": 7.2,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "event-forgery",
+      "provenance-validation",
+      "exec-boundary",
+      "lifecycle-event-integrity"
+    ],
+    "file_name": "CVE-2026-53816.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-3104",
+    "title": "Unitree A1 Web Server Missing Authentication Enables Unauthenticated Remote Camera Feed Access",
+    "published": "2023-11-22",
+    "score": 5.7,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Service & Companion Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Unitree Robotics",
+      "quadruped robot",
+      "unauthenticated web server",
+      "camera feed exposure",
+      "missing authentication",
+      "CWE-306",
+      "robot sensor privacy",
+      "no-auth endpoint",
+      "INCIBE-CERT",
+      "University of León",
+      "discontinued product"
+    ],
+    "file_name": "CVE-2023-3104.pavd.json"
   },
   {
     "cve_id": "CVE-2023-47335",
@@ -295,6 +737,58 @@
       "Consumer drone physical safety impact"
     ],
     "file_name": "CVE-2023-47335.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-7414",
+    "title": "Yarbo Firmware v2.3.9 Hardcoded Administrative Credentials Enable Trivial Mass Exploitation of All Deployed Devices",
+    "published": "2026-05-07",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Yarbo"
+    ],
+    "tags": [],
+    "file_name": "CVE-2026-7414.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-41386",
+    "title": "OpenClaw Unbound Bootstrap Setup Codes Enable Privilege Escalation During First-Use Device Pairing",
+    "published": "2026-04-28",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OpenClaw"
+    ],
+    "tags": [
+      "ai-agent-framework",
+      "bootstrap-security",
+      "device-pairing",
+      "critical-initialization",
+      "zero-auth-escalation"
+    ],
+    "file_name": "CVE-2026-41386.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-7413",
+    "title": "Yarbo Firmware v2.3.9 Hidden Persistent Backdoor Enables Remote Unauthenticated Privileged Access",
+    "published": "2026-05-07",
+    "score": 7.2,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Yarbo"
+    ],
+    "tags": [],
+    "file_name": "CVE-2026-7413.pavd.json"
   },
   {
     "cve_id": "CVE-2025-35027",
@@ -331,6 +825,70 @@
     "file_name": "CVE-2025-35027.pavd.json"
   },
   {
+    "cve_id": "CVE-2023-3103",
+    "title": "Unitree A1 Camera Video Stream Authentication Bypass Enables Adjacent MITM, Sensor Deception, and Denial-of-Service",
+    "published": "2023-11-22",
+    "score": 8.0,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Service & Companion Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Unitree Robotics",
+      "quadruped robot",
+      "camera stream MITM",
+      "authentication bypass by spoofing",
+      "robot sensor interception",
+      "teleoperation attack",
+      "adjacent network",
+      "discontinued product vulnerability",
+      "INCIBE-CERT",
+      "University of León"
+    ],
+    "file_name": "CVE-2023-3103.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-8153",
+    "title": "Universal Robots PolyScope OS Command Injection via Unauthenticated Dashboard Server",
+    "published": "2026-05-08",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Universal Robots"
+    ],
+    "tags": [],
+    "file_name": "CVE-2026-8153.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-41551",
+    "title": "Siemens ROS# Path Traversal Allowing Remote Arbitrary File Access on Robot Device",
+    "published": "2026-05-12",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Siemens"
+    ],
+    "tags": [
+      "ros-bridge",
+      "unity-robotics",
+      "siemens",
+      "path-traversal",
+      "robot-configuration-integrity"
+    ],
+    "file_name": "CVE-2026-41551.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-23356",
     "title": "NVIDIA Isaac Lab SB3 Configuration Parser Missing Authentication Enables Local RCE and Robot Policy Poisoning",
     "published": "2025-10-14",
@@ -356,6 +914,57 @@
       "GR00T humanoid robot training framework"
     ],
     "file_name": "CVE-2025-23356.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2026-7415",
+    "title": "Yarbo Firmware v2.3.9 MQTT Broker Unauthenticated Anonymous Access Enables Telemetry Interception and Unauthorized Robot Control",
+    "published": "2026-05-07",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Service & Companion Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Yarbo"
+    ],
+    "tags": [
+      "MQTT",
+      "IoT message bus",
+      "unauthenticated pub/sub"
+    ],
+    "file_name": "CVE-2026-7415.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-45467",
+    "title": "Unitree Go1 Firmware Update MD5-Only Verification Enables Malicious Firmware Injection via Adjacent Network",
+    "published": "2025-07-25",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Service & Companion Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "Unitree Robotics",
+      "quadruped robot",
+      "firmware update security",
+      "MD5 integrity bypass",
+      "unsigned firmware injection",
+      "insecure firmware verification",
+      "adjacent network attack",
+      "persistent robot compromise",
+      "CWE-354",
+      "CWE-345",
+      "hardware firmware vulnerability",
+      "physical AI safety",
+      "NIST SP 800-193"
+    ],
+    "file_name": "CVE-2025-45467.pavd.json"
   },
   {
     "cve_id": "CVE-2026-26741",
