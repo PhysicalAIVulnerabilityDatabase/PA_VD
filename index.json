@@ -654,33 +654,6 @@
     "file_name": "CVE-2025-7677.pavd.json"
   },
   {
-    "cve_id": "CVE-2026-1442",
-    "title": "Unitree Firmware Update Forgery via Hard-coded TEA Cryptographic Key Material (UPK/TEA Broken Integrity)",
-    "published": "2026-02-27",
-    "score": 7.1,
-    "severity": "HIGH",
-    "domains": [
-      "Physical AI Infrastructure",
-      "Mobile Robot & AMR",
-      "Humanoid Robot",
-      "Cross-Domain Components"
-    ],
-    "vendors": [
-      "Unitree Robotics"
-    ],
-    "tags": [
-      "Broken firmware OTA integrity",
-      "Hard-coded TEA symmetric key",
-      "Missing asymmetric code signing",
-      "Missing Robot PKI",
-      "Fleet-wide supply chain risk",
-      "Firmware forgery (proven)",
-      "MQTT delivery vector (unresolved)",
-      "Affects all Unitree product lines (Go1/Go2/G1)"
-    ],
-    "file_name": "CVE-2026-1442.pavt.json"
-  },
-  {
     "cve_id": "CVE-2024-47784",
     "title": "ABB ANC Navigation Controller Unverified Password Change Authentication Bypass",
     "published": "2025-04-30",
@@ -946,31 +919,6 @@
       "dds-security"
     ],
     "file_name": "CVE-2023-24012.pavd.json"
-  },
-  {
-    "cve_id": "CVE-2026-8153",
-    "title": "Universal Robots PolyScope Dashboard Server OS Command Injection Enables Unauthenticated Network RCE",
-    "published": "2026-05-08",
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "domains": [
-      "Industrial Robot",
-      "Robot Operating Systems & Middleware"
-    ],
-    "vendors": [
-      "Universal Robots"
-    ],
-    "tags": [
-      "OS command injection",
-      "Unauthenticated robot controller interface",
-      "Industrial cobot RCE",
-      "OT network lateral movement",
-      "URScript execution",
-      "Dashboard Server protocol",
-      "Safety system bypass risk",
-      "Manufacturing environment physical impact"
-    ],
-    "file_name": "CVE-2026-8153.pavt.json"
   },
   {
     "cve_id": "CVE-2026-24148",
@@ -1327,31 +1275,6 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-6071.pavd.json"
-  },
-  {
-    "cve_id": "CVE-2026-27510",
-    "title": "Unitree Go2 Mobile Program Tampering and Marketplace Distribution Enable Root RCE",
-    "published": "2026-02-26",
-    "score": 8.7,
-    "domains": [
-      "Mobile Robot & AMR",
-      "Physical AI Infrastructure",
-      "Humanoid Robot",
-      "Robot Operating Systems & Middleware"
-    ],
-    "vendors": [
-      "Unitree Robotics"
-    ],
-    "tags": [
-      "Robotics supply chain attack",
-      "Mobile companion app trust boundary",
-      "Marketplace one-to-many fleet compromise",
-      "Edge robotics root execution",
-      "Human-in-the-loop trigger dependency",
-      "Missing code-signing / integrity verification",
-      "User-created programme execution"
-    ],
-    "file_name": "CVE-2026-27510.pavt.json"
   },
   {
     "cve_id": "CVE-2026-41352",
@@ -1739,25 +1662,6 @@
     "file_name": "CVE-2024-41921.pavd.json"
   },
   {
-    "cve_id": "CVE-2026-27509",
-    "title": "Unitree Go2 Missing DDS Authentication Enables Adjacent RCE",
-    "score": 8.5,
-    "domains": [
-      "Humanoid Robot",
-      "Robot Operating Systems & Middleware"
-    ],
-    "vendors": [
-      "Unitree Robotics"
-    ],
-    "tags": [
-      "DDS",
-      "ROS-like middleware pattern",
-      "Edge robotics execution",
-      "Human-in-the-loop trigger dependency"
-    ],
-    "file_name": "CVE-2026-27509.pavt.json"
-  },
-  {
     "cve_id": "CVE-2026-53845",
     "title": "OpenClaw Skill-Command Dispatch Before-Tool-Call Hook Bypass Audit Evasion",
     "published": "2026-06-16",
@@ -1952,7 +1856,7 @@
       "Humanoid Robot"
     ],
     "vendors": [
-      "Unitree"
+      "Unitree Robotics"
     ],
     "tags": [
       "supply-chain-firmware",
@@ -2956,7 +2860,7 @@
       "Mobile Robot & AMR"
     ],
     "vendors": [
-      "Unitree"
+      "Unitree Robotics"
     ],
     "tags": [
       "hardcoded-credentials",
@@ -3195,7 +3099,7 @@
       "Mobile Companion App"
     ],
     "vendors": [
-      "UnitreeRobotics"
+      "Unitree Robotics"
     ],
     "tags": [
       "Unitree",
@@ -3319,7 +3223,7 @@
       "Robot Operating Systems & Middleware"
     ],
     "vendors": [
-      "UnitreeRobotics"
+      "Unitree Robotics"
     ],
     "tags": [
       "Unitree",
@@ -3669,33 +3573,6 @@
       "authentication bypass"
     ],
     "file_name": "CVE-2025-13777.pavd.json"
-  },
-  {
-    "cve_id": "CVE-2025-23356",
-    "title": "NVIDIA Isaac Lab SB3 Configuration Parser Missing Authentication Enables Local RCE and Robot Policy Poisoning",
-    "published": "2025-10-14",
-    "score": 8.4,
-    "severity": "HIGH",
-    "domains": [
-      "Embodied AI Agent",
-      "Physical AI Infrastructure",
-      "Humanoid Robot"
-    ],
-    "vendors": [
-      "NVIDIA"
-    ],
-    "tags": [
-      "Robot AI training pipeline attack",
-      "SB3 Stable-Baselines3 vulnerability",
-      "YAML unsafe deserialization",
-      "Robot policy supply chain poisoning",
-      "MLOps for robotics security",
-      "GPU training host local RCE",
-      "Embodied AI policy integrity",
-      "NVIDIA Isaac Sim ecosystem",
-      "GR00T humanoid robot training framework"
-    ],
-    "file_name": "CVE-2025-23356.pavt.json"
   },
   {
     "cve_id": "CVE-2025-67109",
