@@ -740,7 +740,7 @@
       "Physical AI Infrastructure"
     ],
     "vendors": [
-      "Mobile Industrial Robots (MiR)"
+      "Mobile Industrial Robots"
     ],
     "tags": [
       "MiR",
@@ -1026,7 +1026,7 @@
       "Cross-Domain Components"
     ],
     "vendors": [
-      "RTI"
+      "RTI (Real-Time Innovations)"
     ],
     "tags": [
       "dds-middleware",
@@ -1069,7 +1069,7 @@
       "Service & Companion Robot"
     ],
     "vendors": [
-      "ECOVACS Robotics"
+      "ECOVACS"
     ],
     "tags": [
       "ecovacs",
@@ -1234,32 +1234,6 @@
       "consumer-robot-privacy"
     ],
     "file_name": "CVE-2025-44251.pavd.json"
-  },
-  {
-    "cve_id": "CVE-2026-25874",
-    "title": "Hugging Face LeRobot Unsafe Pickle Deserialization over Unauthenticated gRPC Enables Network RCE",
-    "published": "2026-04-23",
-    "score": 9.3,
-    "severity": "CRITICAL",
-    "domains": [
-      "Embodied AI Agent",
-      "Robot Operating Systems & Middleware",
-      "Physical AI Infrastructure"
-    ],
-    "vendors": [
-      "Hugging Face"
-    ],
-    "tags": [
-      "gRPC",
-      "Unsafe pickle deserialization",
-      "Unauthenticated inference API",
-      "Embodied AI policy hijacking",
-      "Edge robotics RCE",
-      "Missing TLS on robot communication channel",
-      "AI inference pipeline compromise",
-      "Physical action injection via AI model"
-    ],
-    "file_name": "CVE-2026-25874.pavt.json"
   },
   {
     "cve_id": "CVE-2025-6071",
@@ -1479,7 +1453,7 @@
       "Industrial Robot"
     ],
     "vendors": [
-      "SICK AG"
+      "SICK"
     ],
     "tags": [
       "industrial-controller",
@@ -1731,7 +1705,7 @@
       "Physical AI Infrastructure"
     ],
     "vendors": [
-      "Mobile Industrial Robots (MiR)"
+      "Mobile Industrial Robots"
     ],
     "tags": [
       "MiR",
@@ -1753,7 +1727,7 @@
       "Robot Operating Systems & Middleware"
     ],
     "vendors": [
-      "RTI"
+      "RTI (Real-Time Innovations)"
     ],
     "tags": [
       "DDS",
@@ -1836,7 +1810,7 @@
       "Robot Operating Systems & Middleware"
     ],
     "vendors": [
-      "Real-Time Innovations (RTI)"
+      "RTI (Real-Time Innovations)"
     ],
     "tags": [
       "DDS",
@@ -1892,7 +1866,7 @@
       "Cross-Domain Components"
     ],
     "vendors": [
-      "SICK AG"
+      "SICK"
     ],
     "tags": [
       "LiDAR-sensor",
@@ -2390,7 +2364,7 @@
       "Cross-Domain Components"
     ],
     "vendors": [
-      "Object Computing, Inc. (OCI)"
+      "Object Computing Inc. (OCI)"
     ],
     "tags": [
       "OpenDDS",
@@ -2677,7 +2651,7 @@
       "Mobile Robot & AMR"
     ],
     "vendors": [
-      "MiR (Mobile Industrial Robots)"
+      "Mobile Industrial Robots"
     ],
     "tags": [
       "MiR",
@@ -3057,7 +3031,7 @@
       "Embodied AI Agent"
     ],
     "vendors": [
-      "HuggingFace"
+      "Hugging Face"
     ],
     "tags": [
       "LeRobot",
