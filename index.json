@@ -20,6 +20,26 @@
     "file_name": "CVE-2026-10557.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-9876",
+    "title": "ABB ANC Navigation Controller Modification of Assumed-Immutable Navigation Data",
+    "published": "2025-04-30",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "AMR-navigation",
+      "map-tampering",
+      "safety-zone",
+      "industrial-robot-safety"
+    ],
+    "file_name": "CVE-2024-9876.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-41909",
     "title": "OpenClaw Improper Authorization in Paired-Device Pairing Management Allows Cross-Request Interference",
     "published": "2026-04-23",
@@ -41,6 +61,26 @@
     "file_name": "CVE-2026-41909.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-41109",
+    "title": "Ghost Robotics Vision 60 Physical Port Missing Authentication ROS2 Network Unauthorized Access",
+    "published": "2025-10-22",
+    "score": 4.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "ros2-authentication",
+      "physical-port-security",
+      "quadruped-robot-security",
+      "network-pivot"
+    ],
+    "file_name": "CVE-2025-41109.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-56767",
     "title": "Maxun Cross-Tenant IDOR in Storage and Webhook API Handlers OAuth Token Exposure",
     "published": "2026-06-25",
@@ -60,6 +100,43 @@
       "IDOR"
     ],
     "file_name": "CVE-2026-56767.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-1254",
+    "title": "RTI Connext Professional Recording Service Out-of-Bounds Read Write Remote Memory Corruption",
+    "published": "2025-05-08",
+    "score": 7.7,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "RTI (Real-Time Innovations)"
+    ],
+    "tags": [
+      "DDS",
+      "RTI Connext",
+      "Recording Service",
+      "OOB write",
+      "remote exploit",
+      "telemetry logging"
+    ],
+    "file_name": "CVE-2025-1254.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62580",
+    "title": "Delta Electronics ASDA-Soft Stack-based Buffer Overflow via Malicious Project File",
+    "published": "2025-10-16",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Delta Electronics"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-62580.pavd.json"
   },
   {
     "cve_id": "CVE-2025-7064",
@@ -183,6 +260,69 @@
     "file_name": "CVE-2026-53821.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-41110",
+    "title": "Ghost Robotics Vision 60 APK Hardcoded WiFi and SSH Credentials Full Robot Takeover",
+    "published": "2025-10-22",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "hardcoded-credentials",
+      "apk-security",
+      "ssh-access",
+      "quadruped-robot-security",
+      "fleet-wide-credential-exposure"
+    ],
+    "file_name": "CVE-2025-41110.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62601",
+    "title": "eProsima Fast DDS Heap Buffer Overflow in SPDP readBinaryProperty Causes Remote Process Termination",
+    "published": "2026-02-03",
+    "score": 1.7,
+    "severity": "LOW",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS",
+      "FastDDS",
+      "SPDP",
+      "Middleware"
+    ],
+    "file_name": "CVE-2025-62601.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52327",
+    "title": "ECOVACS Cloud Service PIN Bypass Unauthorized Live Video Feed Access",
+    "published": "2025-01-23",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "robot-camera",
+      "privacy",
+      "PIN-bypass",
+      "cloud-API"
+    ],
+    "file_name": "CVE-2024-52327.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-28457",
     "title": "OpenClaw Sandbox Skill Mirroring Path Traversal via Unsanitized Name Parameter Allows Write Outside Workspace",
     "published": "2026-03-05",
@@ -226,6 +366,26 @@
       "workspace-security"
     ],
     "file_name": "CVE-2026-53819.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-51456",
+    "title": "IBM Robotic Process Automation Weak Cryptographic Algorithm Remote Sensitive Data Exposure",
+    "published": "2025-01-12",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "IBM"
+    ],
+    "tags": [
+      "RPA",
+      "weak-cryptography",
+      "RSA-OAEP",
+      "data-exposure"
+    ],
+    "file_name": "CVE-2024-51456.pavd.json"
   },
   {
     "cve_id": "CVE-2026-32034",
@@ -297,6 +457,135 @@
       "reconnection-race"
     ],
     "file_name": "CVE-2026-53838.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-31362",
+    "title": "BizRobo! RPA Platform Hard-Coded Cryptographic Key Credential Exposure",
+    "published": "2025-04-11",
+    "severity": "LOW",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OPEN, Inc."
+    ],
+    "tags": [
+      "RPA",
+      "software-robot",
+      "hard-coded-key",
+      "credential-theft",
+      "workflow-file"
+    ],
+    "file_name": "CVE-2025-31362.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62599",
+    "title": "eProsima Fast DDS Integer Overflow in SPDP readPropertySeq Causes Remote Out-of-Memory DoS",
+    "published": "2026-02-03",
+    "score": 8.6,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS",
+      "FastDDS",
+      "SPDP",
+      "Middleware"
+    ],
+    "file_name": "CVE-2025-62599.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-39780",
+    "title": "ROS 1 dynparam yaml.load Unsafe Deserialization Arbitrary Python Code Execution",
+    "published": "2025-04-02",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Robotics / ROS community"
+    ],
+    "tags": [
+      "ros1",
+      "dynparam",
+      "yaml-deserialization",
+      "ros-noetic",
+      "dynamic-reconfigure",
+      "unsafe-deserialization"
+    ],
+    "file_name": "CVE-2024-39780.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-12740",
+    "title": "NI Vision Software Vulnerable Third-Party Image Processing Library Arbitrary Code Execution",
+    "published": "2025-01-27",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NI (National Instruments) / Emerson"
+    ],
+    "tags": [
+      "ni-vision",
+      "supply-chain",
+      "image-processing",
+      "industrial-vision",
+      "machine-vision",
+      "file-processing-rce"
+    ],
+    "file_name": "CVE-2024-12740.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-1252",
+    "title": "RTI Connext Professional Core Libraries Heap Buffer Overflow Memory Corruption",
+    "published": "2025-05-08",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "RTI (Real-Time Innovations)"
+    ],
+    "tags": [
+      "DDS",
+      "RTI Connext",
+      "ROS2",
+      "real-time middleware",
+      "heap overflow"
+    ],
+    "file_name": "CVE-2025-1252.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-64307",
+    "title": "Brightpick AI Internal Logic Control Web Interface Missing Authentication Robot Control Manipulation",
+    "published": "2025-11-15",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Brightpick AI"
+    ],
+    "tags": [
+      "AMR fleet",
+      "warehouse automation",
+      "unauthenticated API",
+      "CISA ICS advisory",
+      "Brightpick"
+    ],
+    "file_name": "CVE-2025-64307.pavd.json"
   },
   {
     "cve_id": "CVE-2026-53827",
@@ -390,6 +679,26 @@
       "Affects all Unitree product lines (Go1/Go2/G1)"
     ],
     "file_name": "CVE-2026-1442.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2024-47784",
+    "title": "ABB ANC Navigation Controller Unverified Password Change Authentication Bypass",
+    "published": "2025-04-30",
+    "score": 2.6,
+    "severity": "LOW",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "AMR",
+      "navigation-controller",
+      "web-HMI",
+      "password-management"
+    ],
+    "file_name": "CVE-2024-47784.pavd.json"
   },
   {
     "cve_id": "CVE-2025-60017",
@@ -493,6 +802,66 @@
     "file_name": "CVE-2026-53865.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-31932",
+    "title": "BizRobo! RPA Management Console Deserialization of Untrusted Data Remote Code Execution",
+    "published": "2025-04-11",
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "OPEN, Inc."
+    ],
+    "tags": [
+      "RPA",
+      "software-robot",
+      "deserialization",
+      "management-console",
+      "network-RCE"
+    ],
+    "file_name": "CVE-2025-31932.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-41108",
+    "title": "Ghost Robotics Vision 60 MAVLink Protocol Missing Authentication Unauthorized Full Robot Control",
+    "published": "2025-10-22",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "MAVLink-authentication",
+      "quadruped-robot-security",
+      "remote-control-hijacking",
+      "wireless-attack"
+    ],
+    "file_name": "CVE-2025-41108.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-9877",
+    "title": "ABB ANC Navigation Controller Sensitive Data Exposure via GET Request Query Strings",
+    "published": "2025-04-30",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "AMR-navigation",
+      "URL-exposure",
+      "credential-leakage",
+      "web-HMI"
+    ],
+    "file_name": "CVE-2024-9877.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-45006",
     "title": "OpenClaw Gateway Tool Config Mutation via Incomplete Denylist Bypass Enables Persistent Malicious Configuration by Compromised AI Models",
     "published": "2026-05-11",
@@ -516,6 +885,27 @@
     "file_name": "CVE-2026-45006.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-64098",
+    "title": "eProsima Fast-DDS SPDP Security Token vecsize Integer Overflow OOM Remote Denial of Service",
+    "published": "2026-02-03",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS security",
+      "integer overflow",
+      "std::vector::resize",
+      "eProsima Fast-DDS"
+    ],
+    "file_name": "CVE-2025-64098.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-2330",
     "title": "SICK CROWN REST Interface Incomplete Whitelist Path Traversal Unauthenticated Device Configuration Tampering",
     "published": "2026-03-06",
@@ -533,6 +923,29 @@
       "persistent-config-tampering"
     ],
     "file_name": "CVE-2026-2330.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-24012",
+    "title": "OpenDDS PKCS#7 Certificate Validation Bypass ROS 2 Secure Databus Full Compromise",
+    "published": "2025-01-09",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Object Computing Inc. (OCI)"
+    ],
+    "tags": [
+      "ros",
+      "opendds",
+      "pkcs7",
+      "certificate-bypass",
+      "middleware-security",
+      "dds-security"
+    ],
+    "file_name": "CVE-2023-24012.pavd.json"
   },
   {
     "cve_id": "CVE-2026-8153",
@@ -677,6 +1090,51 @@
     "file_name": "CVE-2026-4374.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-62600",
+    "title": "eProsima Fast DDS Integer Overflow in SPDP readBinaryPropertySeq Causes Remote Out-of-Memory DoS",
+    "published": "2026-02-03",
+    "score": 8.6,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS",
+      "FastDDS",
+      "SPDP",
+      "Middleware"
+    ],
+    "file_name": "CVE-2025-62600.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-42911",
+    "title": "ECOVACS Deebot T20 OMNI T20e OMNI WiFi Remote Code Execution Pre-Authentication",
+    "published": "2025-01-15",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS Robotics"
+    ],
+    "tags": [
+      "ecovacs",
+      "deebot",
+      "wifi-rce",
+      "pre-auth",
+      "consumer-robot",
+      "surveillance",
+      "home-network"
+    ],
+    "file_name": "CVE-2024-42911.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-41378",
     "title": "OpenClaw Paired Node Privilege Escalation to Gateway RCE via Unrestricted node.event Agent Dispatch",
     "published": "2026-04-28",
@@ -724,6 +1182,112 @@
     "file_name": "CVE-2026-22773.pavt.json"
   },
   {
+    "cve_id": "CVE-2025-23296",
+    "title": "NVIDIA Isaac-GR00T N1 Python Component Code Injection Remote Code Execution",
+    "published": "2025-08-13",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "GR00T",
+      "foundation-model",
+      "humanoid-robot-AI",
+      "python-injection",
+      "local-exploit"
+    ],
+    "file_name": "CVE-2025-23296.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-48849",
+    "title": "ABB FLXEON Edge Controller WebSocket Missing Origin Validation Unauthorized Request Execution",
+    "published": "2025-01-29",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "WebSocket-security",
+      "industrial-edge",
+      "CSRF",
+      "session-bypass"
+    ],
+    "file_name": "CVE-2024-48849.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-53320",
+    "title": "Qualisys C++ SDK Multiple Stack Buffer Overflows Remote Code Execution via Motion Capture API",
+    "published": "2025-01-31",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Qualisys"
+    ],
+    "tags": [
+      "motion-capture",
+      "C++-SDK",
+      "buffer-overflow",
+      "research-infrastructure"
+    ],
+    "file_name": "CVE-2024-53320.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-23356",
+    "title": "NVIDIA Isaac Lab SB3 Configuration Parsing Missing Authentication Code Execution",
+    "published": "2025-10-14",
+    "score": 8.4,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "robot-learning",
+      "RL-training",
+      "policy-poisoning",
+      "sim-to-real",
+      "SB3",
+      "isaac-lab"
+    ],
+    "file_name": "CVE-2025-23356.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-44251",
+    "title": "Ecovacs Deebot T10 Cleartext WiFi Credential Transmission During Pairing",
+    "published": "2025-07-10",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Ecovacs"
+    ],
+    "tags": [
+      "pairing-protocol-security",
+      "iot-robot-wifi",
+      "credential-exposure",
+      "consumer-robot-privacy"
+    ],
+    "file_name": "CVE-2025-44251.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-25874",
     "title": "Hugging Face LeRobot Unsafe Pickle Deserialization over Unauthenticated gRPC Enables Network RCE",
     "published": "2026-04-23",
@@ -748,6 +1312,21 @@
       "Physical action injection via AI model"
     ],
     "file_name": "CVE-2026-25874.pavt.json"
+  },
+  {
+    "cve_id": "CVE-2025-6071",
+    "title": "ABB RMC-100 Hard-coded Cryptographic Key Enables MQTT Communication Decryption",
+    "published": "2025-07-03",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-6071.pavd.json"
   },
   {
     "cve_id": "CVE-2026-27510",
@@ -819,6 +1398,71 @@
     "file_name": "CVE-2026-32044.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-14543",
+    "title": "RTI Connext Professional Core Libraries XXE Injection Serialized Data External Linking",
+    "published": "2026-04-30",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "RTI (Real-Time Innovations)"
+    ],
+    "tags": [
+      "DDS",
+      "RTI Connext",
+      "XXE",
+      "XML injection",
+      "SSRF",
+      "ROS2",
+      "middleware exploitation"
+    ],
+    "file_name": "CVE-2025-14543.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-63548",
+    "title": "eProsima Micro-XRCE-DDS Agent Invalid Boolean Field Remote Denial of Service",
+    "published": "2026-05-01",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "micro-ROS",
+      "XRCE-DDS",
+      "embedded middleware",
+      "boolean validation",
+      "MCU robotics"
+    ],
+    "file_name": "CVE-2025-63548.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-63829",
+    "title": "eProsima Fast-DDS Time_t Integer Overflow Infinite Loop Remote Denial of Service",
+    "published": "2025-11-18",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "RTPS timestamp",
+      "integer overflow",
+      "infinite loop",
+      "eProsima Fast-DDS"
+    ],
+    "file_name": "CVE-2025-63829.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-26461",
     "title": "Aver PTC320UV2 PTZ Camera Web Interface Command Injection Enables Unauthenticated Remote Code Execution",
     "published": "2026-05-01",
@@ -837,6 +1481,110 @@
       "vision-sensor"
     ],
     "file_name": "CVE-2026-26461.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-1253",
+    "title": "RTI Connext Professional Core Libraries Stack Buffer Overflow Arbitrary Code Execution",
+    "published": "2025-05-08",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "RTI (Real-Time Innovations)"
+    ],
+    "tags": [
+      "DDS",
+      "RTI Connext",
+      "ROS2",
+      "stack overflow",
+      "code execution",
+      "real-time middleware"
+    ],
+    "file_name": "CVE-2025-1253.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-47006",
+    "title": "Intel RealSense D400 Series UWP Driver Uncontrolled Search Path Local Privilege Escalation",
+    "published": "2025-02-12",
+    "score": 6.7,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Intel"
+    ],
+    "tags": [
+      "depth-camera",
+      "RealSense",
+      "Windows-driver",
+      "perception-hardware"
+    ],
+    "file_name": "CVE-2024-47006.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-39835",
+    "title": "ROS 1 roslaunch Eval Injection Substitution Args Mechanism Arbitrary Python Code Execution",
+    "published": "2025-07-17",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Robotics / ROS community"
+    ],
+    "tags": [
+      "ros1",
+      "roslaunch",
+      "eval-injection",
+      "ros-noetic",
+      "launch-file",
+      "code-injection"
+    ],
+    "file_name": "CVE-2024-39835.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-0867",
+    "title": "SICK MEAC300 Industrial Controller Stored Administrator Credentials Enable Privilege Escalation to Admin",
+    "published": "2025-02-14",
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "SICK AG"
+    ],
+    "tags": [
+      "industrial-controller",
+      "stored-credentials",
+      "ICS-security",
+      "SICK-sensor"
+    ],
+    "file_name": "CVE-2025-0867.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-51448",
+    "title": "IBM Robotic Process Automation Insecure File Permissions Local Privilege Escalation via Service Binary Replacement",
+    "published": "2025-01-18",
+    "score": 6.7,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "IBM"
+    ],
+    "tags": [
+      "RPA",
+      "software-automation",
+      "Windows-service",
+      "file-permissions"
+    ],
+    "file_name": "CVE-2024-51448.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7368",
@@ -905,6 +1653,51 @@
     "file_name": "CVE-2026-8113.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-1283",
+    "title": "Dingtian DT-R0 Series Authentication Bypass Direct Navigation Full Device Control",
+    "published": "2025-02-13",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Dingtian"
+    ],
+    "tags": [
+      "ICS",
+      "relay controller",
+      "authentication bypass",
+      "industrial automation",
+      "CISA advisory",
+      "ICSA-25-044-18"
+    ],
+    "file_name": "CVE-2025-1283.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-13716",
+    "title": "Tencent MimicMotion create_pipeline Deserialization Untrusted Data Remote Code Execution",
+    "published": "2025-12-23",
+    "score": 8.5,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "Tencent"
+    ],
+    "tags": [
+      "AI motion generation",
+      "MimicMotion",
+      "deserialization",
+      "RCE",
+      "ZDI",
+      "humanoid training",
+      "pickle exploit"
+    ],
+    "file_name": "CVE-2025-13716.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1612",
     "title": "AL-KO Robolinho Update Software Hard-Coded AWS Credentials Cloud Storage Exposure",
     "published": "2026-03-30",
@@ -922,6 +1715,28 @@
       "no-vendor-response"
     ],
     "file_name": "CVE-2026-1612.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-41921",
+    "title": "ROS 1 rostopic echo Filter Option Eval Injection Arbitrary Python Code Execution",
+    "published": "2025-07-17",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Robotics / ROS community"
+    ],
+    "tags": [
+      "ros1",
+      "rostopic",
+      "eval-injection",
+      "ros-noetic",
+      "tool-injection",
+      "local-escalation"
+    ],
+    "file_name": "CVE-2024-41921.pavd.json"
   },
   {
     "cve_id": "CVE-2026-27509",
@@ -964,6 +1779,44 @@
     "file_name": "CVE-2026-53845.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-59459",
+    "title": "SICK TLOC100-100 SSH Unprivileged Account Resource Exhaustion Causing Persistent DoS",
+    "published": "2025-10-27",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "SICK AG"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-59459.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33177",
+    "title": "NVIDIA Jetson Linux IGX OS NvMap Improper Memory Tracking Denial-of-Service",
+    "published": "2025-10-14",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent",
+      "Humanoid Robot"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NvMap",
+      "kernel-driver",
+      "GPU-memory",
+      "robotics-SoC",
+      "local-DoS"
+    ],
+    "file_name": "CVE-2025-33177.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-8748",
     "title": "Mobile Industrial Robots MiR Software Command Injection Authenticated Remote Code Execution",
     "published": "2025-08-08",
@@ -985,6 +1838,27 @@
       "factory automation"
     ],
     "file_name": "CVE-2025-8748.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-10450",
+    "title": "RTI Connext Professional DDS Middleware Private Information Exposure via Network Traffic Sniffing",
+    "published": "2025-12-16",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "RTI"
+    ],
+    "tags": [
+      "DDS",
+      "ROS2",
+      "middleware-security",
+      "network-sniffing",
+      "RTI-Connext"
+    ],
+    "file_name": "CVE-2025-10450.pavd.json"
   },
   {
     "cve_id": "CVE-2026-35648",
@@ -1030,6 +1904,25 @@
     "file_name": "CVE-2026-24212.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-3572",
+    "title": "INTUMIT SmartRobot Server-Side Request Forgery Internal Network Probe and File Read",
+    "published": "2025-04-14",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "INTUMIT"
+    ],
+    "tags": [
+      "ssrf",
+      "network-reconnaissance",
+      "service-robot-web-interface"
+    ],
+    "file_name": "CVE-2025-3572.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-2394",
     "title": "RTI Connext Professional Core Libraries Buffer Over-Read Remote Information Disclosure",
     "published": "2026-04-01",
@@ -1069,6 +1962,44 @@
     "file_name": "CVE-2026-1442.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-46546",
+    "title": "Sherpa Orchestrator 141851 Authenticated Blind SQL Injection in Robot Fleet Management APIs",
+    "published": "2025-04-25",
+    "score": 3.5,
+    "severity": "LOW",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "Sherpa"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-46546.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-32472",
+    "title": "SICK multiScan1XX picoScan1XX LiDAR Web Interface Slowloris Denial-of-Service",
+    "published": "2025-04-28",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Industrial Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "SICK AG"
+    ],
+    "tags": [
+      "LiDAR-sensor",
+      "industrial-safety-scanner",
+      "AMR-perception",
+      "slowloris-DoS",
+      "ICS-network"
+    ],
+    "file_name": "CVE-2025-32472.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-32041",
     "title": "OpenClaw Browser Control Startup Auth Bootstrap Failure Exposes Evaluate-Capable Routes Without Authentication",
     "published": "2026-03-02",
@@ -1092,6 +2023,89 @@
     "file_name": "CVE-2026-32041.pavd.json"
   },
   {
+    "cve_id": "CVE-2021-47664",
+    "title": "Franka Emika Robot Improper Authentication Username Enumeration Information Disclosure",
+    "published": "2025-04-24",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Franka Robotics"
+    ],
+    "tags": [
+      "cobot",
+      "username-enum",
+      "information-disclosure",
+      "auth-weakness",
+      "franka"
+    ],
+    "file_name": "CVE-2021-47664.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33183",
+    "title": "NVIDIA Isaac-GR00T N1.5 Python Component Code Injection Remote Code Execution",
+    "published": "2025-11-18",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Humanoid Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "GR00T-N1.5",
+      "foundation-model",
+      "humanoid-robot-AI",
+      "python-injection",
+      "local-exploit"
+    ],
+    "file_name": "CVE-2025-33183.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-23270",
+    "title": "NVIDIA Jetson Linux UEFI Management Mode Side-Channel Information Disclosure and Code Execution",
+    "published": "2025-07-17",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent",
+      "Industrial Robot",
+      "Humanoid Robot"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "nvidia-jetson",
+      "uefi-firmware",
+      "side-channel",
+      "physical-access",
+      "robotics-hardware"
+    ],
+    "file_name": "CVE-2025-23270.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-6074",
+    "title": "ABB RMC-100 Hard-coded Cryptographic Key Enables REST Interface Authentication Bypass and MQTT Config Access",
+    "published": "2025-07-03",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-6074.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-42432",
     "title": "OpenClaw Node Pairing Reconnect Bypasses operator.admin Scope Enabling Local Privilege Escalation to Exec Capability",
     "published": "2026-04-28",
@@ -1113,6 +2127,50 @@
     "file_name": "CVE-2026-42432.pavd.json"
   },
   {
+    "cve_id": "CVE-2023-24011",
+    "title": "ZettaScale Eclipse CycloneDDS PKCS#7 Certificate Validation Bypass ROS 2 Secure Databus Compromise",
+    "published": "2025-01-09",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "ZettaScale",
+      "Eclipse Foundation"
+    ],
+    "tags": [
+      "ros2",
+      "cyclonedds",
+      "zenoh",
+      "pkcs7",
+      "certificate-bypass",
+      "middleware-security"
+    ],
+    "file_name": "CVE-2023-24011.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52328",
+    "title": "ECOVACS Robots Insecure Audio Warning File Storage Enables Silent Camera Activation",
+    "published": "2025-01-23",
+    "score": 2.3,
+    "severity": "LOW",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "covert-surveillance",
+      "privacy-indicator",
+      "robot-camera",
+      "filesystem-permissions"
+    ],
+    "file_name": "CVE-2024-52328.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-65865",
     "title": "eProsima Fast-DDS v3.3 Integer Overflow Denial of Service",
     "published": "2025-12-23",
@@ -1132,6 +2190,27 @@
       "Fast-DDS"
     ],
     "file_name": "CVE-2025-65865.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-12079",
+    "title": "ECOVACS Robot Lawnmower Anti-Theft PIN Cleartext Storage Physical Anti-Theft Bypass",
+    "published": "2025-01-23",
+    "score": 5.0,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "ecovacs",
+      "cleartext-storage",
+      "anti-theft",
+      "consumer-robot",
+      "physical-access"
+    ],
+    "file_name": "CVE-2024-12079.pavd.json"
   },
   {
     "cve_id": "CVE-2026-53816",
@@ -1183,6 +2262,49 @@
       "discontinued product"
     ],
     "file_name": "CVE-2023-3104.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-23269",
+    "title": "NVIDIA Jetson Linux Kernel Speculative Execution Microarchitectural Side-Channel Information Disclosure",
+    "published": "2025-07-17",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Jetson",
+      "Orin",
+      "Xavier",
+      "speculative execution",
+      "side-channel",
+      "transient execution",
+      "AI edge",
+      "model theft"
+    ],
+    "file_name": "CVE-2025-23269.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33223",
+    "title": "NVIDIA Isaac Launchable Unnecessary Privilege Execution Remote Code Execution",
+    "published": "2025-12-23",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "model-deployment-security",
+      "privilege-escalation",
+      "fleet-management-risk"
+    ],
+    "file_name": "CVE-2025-33223.pavd.json"
   },
   {
     "cve_id": "CVE-2026-33574",
@@ -1253,6 +2375,89 @@
     "file_name": "CVE-2026-28460.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-39289",
+    "title": "ROS 1 rosparam Eval Injection Unsanitized Angle Parameter Arbitrary Python Code Execution",
+    "published": "2025-07-17",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Robotics / ROS community"
+    ],
+    "tags": [
+      "ros1",
+      "rosparam",
+      "eval-injection",
+      "ros-noetic",
+      "parameter-server",
+      "code-injection"
+    ],
+    "file_name": "CVE-2024-39289.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62603",
+    "title": "eProsima Fast-DDS ParticipantGenericMessage CDR Parser OOM Remote Denial of Service",
+    "published": "2026-02-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS security",
+      "CDR deserialization",
+      "eProsima Fast-DDS"
+    ],
+    "file_name": "CVE-2025-62603.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52325",
+    "title": "ECOVACS Robot Lawnmowers and Vacuums BLE SetNetPin Command Injection Unauthenticated RCE",
+    "published": "2025-01-23",
+    "score": 9.6,
+    "severity": "CRITICAL",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "BLE-attack",
+      "consumer-robot",
+      "lawn-mower",
+      "robot-vacuum",
+      "DEFCON32"
+    ],
+    "file_name": "CVE-2024-52325.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52331",
+    "title": "ECOVACS Robots Deterministic Firmware Encryption Key Enables Malicious Firmware Installation",
+    "published": "2025-01-23",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "hardcoded-key",
+      "firmware-integrity",
+      "physical-robot-compromise",
+      "symmetric-crypto-weakness"
+    ],
+    "file_name": "CVE-2024-52331.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1078",
     "title": "Pegasystems Pega Robotic Automation Browser Extension Arbitrary File Write via Malicious Website",
     "published": "2026-04-07",
@@ -1315,6 +2520,26 @@
       "Isaac ROS"
     ],
     "file_name": "CVE-2025-64438.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-48841",
+    "title": "ABB FLXEON Edge Controller Command Injection Unauthenticated Remote Code Execution",
+    "published": "2025-01-27",
+    "score": 10.0,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "edge-controller",
+      "industrial-IoT",
+      "unauthenticated-RCE",
+      "SCADA-adjacent"
+    ],
+    "file_name": "CVE-2024-48841.pavd.json"
   },
   {
     "cve_id": "CVE-2026-35652",
@@ -1383,6 +2608,28 @@
     "file_name": "CVE-2026-2246.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-22838",
+    "title": "Intel RealSense Dynamic Calibrator Uncontrolled Search Path Local Privilege Escalation",
+    "published": "2025-08-12",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Intel"
+    ],
+    "tags": [
+      "Intel RealSense",
+      "depth camera",
+      "DLL hijacking",
+      "privilege escalation",
+      "cross-domain sensor",
+      "INTEL-SA-01318"
+    ],
+    "file_name": "CVE-2025-22838.pavd.json"
+  },
+  {
     "cve_id": "CVE-2023-47335",
     "title": "Autel Robotics EVO Nano Insecure setNFZEnable Permissions Allow Adjacent Attacker to Bypass Geo-Fence",
     "published": "2023-11-16",
@@ -1438,6 +2685,27 @@
     "file_name": "CVE-2025-9225.pavd.json"
   },
   {
+    "cve_id": "CVE-2021-47662",
+    "title": "Franka Emika Robot Missing Authorization Unauthenticated Remote Shutdown Denial of Service",
+    "published": "2025-04-24",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Franka Robotics"
+    ],
+    "tags": [
+      "cobot",
+      "missing-authz",
+      "dos",
+      "industrial",
+      "franka"
+    ],
+    "file_name": "CVE-2021-47662.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-4039",
     "title": "OpenClaw Skill Env Override Injects Dangerous Host Process Variables via Unsanitized applySkillConfigEnvOverrides",
     "published": "2026-02-27",
@@ -1459,6 +2727,64 @@
       "defense-in-depth"
     ],
     "file_name": "CVE-2026-4039.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-6072",
+    "title": "ABB RMC-100 Stack-based Buffer Overflow in JSON Date Expiration Field Enables Remote Crash",
+    "published": "2025-07-03",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-6072.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33210",
+    "title": "NVIDIA Isaac Lab Deserialization Remote Code Execution",
+    "published": "2025-12-16",
+    "score": 9.0,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "simulation-to-real",
+      "training-pipeline-security",
+      "model-poisoning-risk"
+    ],
+    "file_name": "CVE-2025-33210.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-13819",
+    "title": "MiR Robot Fleet Web Server Open Redirect Phishing Credential Theft",
+    "published": "2025-12-01",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MiR (Mobile Industrial Robots)"
+    ],
+    "tags": [
+      "MiR",
+      "AMR",
+      "fleet management",
+      "open redirect",
+      "phishing",
+      "credential theft",
+      "warehouse automation"
+    ],
+    "file_name": "CVE-2025-13819.pavd.json"
   },
   {
     "cve_id": "CVE-2025-67108",
@@ -1497,6 +2823,48 @@
     ],
     "tags": [],
     "file_name": "CVE-2026-7414.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-41148",
+    "title": "ROS 1 rostopic hz Filter Option Eval Injection Arbitrary Python Code Execution",
+    "published": "2025-07-17",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Robotics / ROS community"
+    ],
+    "tags": [
+      "ros1",
+      "rostopic",
+      "eval-injection",
+      "ros-noetic",
+      "tool-injection",
+      "local-escalation"
+    ],
+    "file_name": "CVE-2024-41148.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-3753",
+    "title": "ROS rosbag eval() Code Injection Arbitrary Python Execution",
+    "published": "2025-07-17",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Open Source Robotics Foundation"
+    ],
+    "tags": [
+      "rosbag-security",
+      "eval-injection",
+      "ros-middleware-vulnerability",
+      "developer-tool-attack"
+    ],
+    "file_name": "CVE-2025-3753.pavd.json"
   },
   {
     "cve_id": "CVE-2026-28472",
@@ -1542,6 +2910,28 @@
     "file_name": "CVE-2026-24154.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-64308",
+    "title": "Brightpick Mission Control Hardcoded Credentials Exposed in Client-Side JavaScript Bundle",
+    "published": "2025-11-15",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Brightpick AI"
+    ],
+    "tags": [
+      "AMR fleet",
+      "warehouse automation",
+      "hardcoded credentials",
+      "JavaScript bundle",
+      "CISA ICS advisory",
+      "Brightpick"
+    ],
+    "file_name": "CVE-2025-64308.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-9228",
     "title": "Mobile Industrial Robots MiR Software Insufficient Authorization Note Creation Privilege Bypass",
     "published": "2025-08-20",
@@ -1555,6 +2945,73 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-9228.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-45466",
+    "title": "Unitree Go1 Hardcoded Plaintext Authentication Credentials Unauthorized Robot Access",
+    "published": "2025-07-25",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Unitree"
+    ],
+    "tags": [
+      "hardcoded-credentials",
+      "quadruped-robot-security",
+      "poc-available",
+      "research-robot-security"
+    ],
+    "file_name": "CVE-2025-45466.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33182",
+    "title": "NVIDIA Jetson Linux UEFI Improper Authentication Linux Device Tree Corruption",
+    "published": "2025-10-14",
+    "score": 7.6,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Humanoid Robot",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "device-tree",
+      "UEFI-security",
+      "firmware-tampering",
+      "Jetson-Xavier",
+      "hardware-config"
+    ],
+    "file_name": "CVE-2025-33182.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2023-24010",
+    "title": "eProsima Fast DDS PKCS#7 Certificate Validation Bypass ROS 2 Secure Databus Compromise",
+    "published": "2025-01-09",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ros2",
+      "fastdds",
+      "pkcs7",
+      "certificate-bypass",
+      "middleware-security",
+      "sros2",
+      "dds-security"
+    ],
+    "file_name": "CVE-2023-24010.pavd.json"
   },
   {
     "cve_id": "CVE-2026-1991",
@@ -1600,6 +3057,92 @@
     "file_name": "CVE-2026-41342.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-48852",
+    "title": "ABB FLXEON Edge Controller Sensitive Information Disclosure via HTTPS Log File Access",
+    "published": "2025-01-29",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "log-disclosure",
+      "industrial-edge",
+      "credential-leakage"
+    ],
+    "file_name": "CVE-2024-48852.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-14346",
+    "title": "WHILL Model C2 F Electric Wheelchair Missing Bluetooth Authentication Remote Movement Control",
+    "published": "2026-01-05",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "WHILL"
+    ],
+    "tags": [
+      "Bluetooth",
+      "wheelchair",
+      "mobility device",
+      "no authentication",
+      "physical control",
+      "CISA medical advisory",
+      "ICSMA-25-364-01"
+    ],
+    "file_name": "CVE-2025-14346.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-12078",
+    "title": "ECOVACS Robot Lawnmower Vacuum Shared Static BLE GATT Key Unauthenticated Remote Control",
+    "published": "2025-01-23",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "ecovacs",
+      "ble",
+      "static-key",
+      "consumer-robot",
+      "wireless-takeover",
+      "lawnmower"
+    ],
+    "file_name": "CVE-2024-12078.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-11147",
+    "title": "ECOVACS Robot Lawnmower Vacuum Deterministic Root Password Use of Hard-Coded Credentials Physical Root Access",
+    "published": "2025-01-23",
+    "score": 7.6,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "ecovacs",
+      "hard-coded-creds",
+      "root-access",
+      "consumer-robot",
+      "physical-access",
+      "surveillance"
+    ],
+    "file_name": "CVE-2024-11147.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-25874",
     "title": "HuggingFace LeRobot Async Inference Pipeline Unsafe Pickle Deserialization Unauthenticated Remote Code Execution",
     "published": "2026-04-23",
@@ -1620,6 +3163,26 @@
       "gRPC-unauthenticated"
     ],
     "file_name": "CVE-2026-25874.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52329",
+    "title": "ECOVACS HOME Mobile App TLS Certificate Validation Failure Authentication Token Theft",
+    "published": "2025-01-23",
+    "score": 7.4,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "TLS-bypass",
+      "mobile-app",
+      "token-theft",
+      "MITM"
+    ],
+    "file_name": "CVE-2024-52329.pavd.json"
   },
   {
     "cve_id": "CVE-2026-27510",
@@ -1643,6 +3206,26 @@
       "no-code-signing"
     ],
     "file_name": "CVE-2026-27510.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-10571",
+    "title": "ABB Ability Edgenius Industrial Edge Platform Authentication Bypass via Alternate Path Critical RCE",
+    "published": "2025-11-20",
+    "score": 9.6,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "edge-computing",
+      "authentication-bypass",
+      "industrial-IoT",
+      "ABB-Ability"
+    ],
+    "file_name": "CVE-2025-10571.pavd.json"
   },
   {
     "cve_id": "CVE-2026-24153",
@@ -1685,6 +3268,45 @@
       "zero-auth-escalation"
     ],
     "file_name": "CVE-2026-41386.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33222",
+    "title": "NVIDIA Isaac Launchable Hard-Coded Credential Remote Code Execution and Privilege Escalation",
+    "published": "2025-12-23",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "model-deployment-security",
+      "fleet-management-risk",
+      "hardcoded-credentials"
+    ],
+    "file_name": "CVE-2025-33222.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-52330",
+    "title": "ECOVACS Robot Device TLS Certificate Validation Failure Enables Malicious Firmware Update Injection",
+    "published": "2025-01-23",
+    "score": 7.4,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS"
+    ],
+    "tags": [
+      "firmware-update-attack",
+      "TLS-bypass",
+      "MITM",
+      "physical-robot-compromise"
+    ],
+    "file_name": "CVE-2024-52330.pavd.json"
   },
   {
     "cve_id": "CVE-2026-27509",
@@ -1767,6 +3389,68 @@
     "file_name": "CVE-2026-1079.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-62799",
+    "title": "eProsima Fast-DDS DATA_FRAG Heap Buffer Overflow Critical Remote Code Execution / Denial of Service",
+    "published": "2026-02-03",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "RTPS fragmentation",
+      "heap corruption",
+      "eProsima Fast-DDS",
+      "critical severity"
+    ],
+    "file_name": "CVE-2025-62799.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-62602",
+    "title": "eProsima Fast-DDS SPDP Security Token Heap Buffer Overflow Remote Denial of Service",
+    "published": "2026-02-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS security",
+      "SPDP discovery",
+      "eProsima Fast-DDS"
+    ],
+    "file_name": "CVE-2025-62602.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2019-25480",
+    "title": "ARMBot Unrestricted File Upload Path Traversal Remote Code Execution",
+    "published": "2026-03-11",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "ARMBot"
+    ],
+    "tags": [
+      "web-rce",
+      "unauthenticated",
+      "path-traversal",
+      "robot-management"
+    ],
+    "file_name": "CVE-2019-25480.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-35027",
     "title": "Unitree Robotics BLE WiFi Command Injection Enables Adjacent Root RCE on Go2/G1/H1/B2 Robots (wpa_supplicant_restart.sh)",
     "published": "2025-09-26",
@@ -1799,6 +3483,28 @@
       "robot botnet"
     ],
     "file_name": "CVE-2025-35027.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-0112",
+    "title": "NVIDIA Jetson AGX Orin IGX Orin Improper Input Validation Privilege Escalation Code Execution",
+    "published": "2025-02-12",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "nvidia-jetson",
+      "igx-orin",
+      "privilege-escalation",
+      "ai-hardware",
+      "edge-compute"
+    ],
+    "file_name": "CVE-2024-0112.pavd.json"
   },
   {
     "cve_id": "CVE-2023-3103",
@@ -1882,6 +3588,87 @@
       "supply-chain-risk"
     ],
     "file_name": "CVE-2026-0898.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2021-47663",
+    "title": "Franka Emika Robot Improper JWT Implementation Session Hijacking Full Access",
+    "published": "2025-04-24",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Franka Robotics"
+    ],
+    "tags": [
+      "cobot",
+      "jwt-weakness",
+      "session-hijacking",
+      "full-control",
+      "franka"
+    ],
+    "file_name": "CVE-2021-47663.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33184",
+    "title": "NVIDIA Isaac-GR00T N1.5 Python Component Code Injection Privilege Escalation and Data Tampering",
+    "published": "2025-11-18",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Embodied AI Agent",
+      "Humanoid Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "GR00T-N1.5",
+      "foundation-model",
+      "humanoid-robot-AI",
+      "python-injection",
+      "dual-CVE"
+    ],
+    "file_name": "CVE-2025-33184.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-6073",
+    "title": "ABB RMC-100 Stack-based Buffer Overflow in MQTT Broker Username/Password Fields Enables Remote Crash",
+    "published": "2025-07-03",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [],
+    "file_name": "CVE-2025-6073.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-13777",
+    "title": "ABB AWIN GW100 GW120 IIoT Gateway Authentication Bypass Capture Replay",
+    "published": "2026-03-13",
+    "score": 7.2,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "ABB"
+    ],
+    "tags": [
+      "ABB",
+      "IIoT gateway",
+      "capture-replay",
+      "industrial network",
+      "AWIN",
+      "authentication bypass"
+    ],
+    "file_name": "CVE-2025-13777.pavd.json"
   },
   {
     "cve_id": "CVE-2025-23356",
@@ -1978,6 +3765,29 @@
     "file_name": "CVE-2025-7679.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-64309",
+    "title": "Brightpick Mission Control Unauthenticated WebSocket Discloses Telemetry Configuration and Credentials",
+    "published": "2025-11-15",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Brightpick AI"
+    ],
+    "tags": [
+      "AMR fleet",
+      "warehouse automation",
+      "WebSocket",
+      "unauthenticated endpoint",
+      "real-time telemetry",
+      "CISA ICS advisory",
+      "Brightpick"
+    ],
+    "file_name": "CVE-2025-64309.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-9229",
     "title": "Mobile Industrial Robots MiR Software Information Disclosure via Verbose Error Pages",
     "published": "2025-08-20",
@@ -2016,35 +3826,102 @@
     "file_name": "CVE-2026-32025.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-24807",
+    "title": "eProsima Fast DDS PermissionsCA Certificate Validation Bypass Security Control Circumvention",
+    "published": "2025-02-11",
+    "score": 4.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "ROS2",
+      "DDS-Security",
+      "certificate-bypass",
+      "middleware-auth",
+      "eprosima"
+    ],
+    "file_name": "CVE-2025-24807.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-45467",
-    "title": "Unitree Go1 Firmware Update MD5-Only Verification Enables Malicious Firmware Injection via Adjacent Network",
+    "title": "Unitree Go1 Firmware Update MD5-Only Integrity Verification Allows Malicious Firmware Injection",
     "published": "2025-07-25",
     "score": 7.1,
     "severity": "HIGH",
     "domains": [
-      "Mobile Robot & AMR",
-      "Service & Companion Robot",
-      "Robot Operating Systems & Middleware"
+      "Humanoid Robot"
     ],
     "vendors": [
       "Unitree Robotics"
     ],
-    "tags": [
-      "Unitree Robotics",
-      "quadruped robot",
-      "firmware update security",
-      "MD5 integrity bypass",
-      "unsigned firmware injection",
-      "insecure firmware verification",
-      "adjacent network attack",
-      "persistent robot compromise",
-      "CWE-354",
-      "CWE-345",
-      "hardware firmware vulnerability",
-      "physical AI safety",
-      "NIST SP 800-193"
-    ],
+    "tags": [],
     "file_name": "CVE-2025-45467.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-63547",
+    "title": "eProsima Micro-XRCE-DDS Agent MTU Length Field Buffer Access Remote Denial of Service",
+    "published": "2026-05-01",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "eProsima"
+    ],
+    "tags": [
+      "micro-ROS",
+      "XRCE-DDS",
+      "embedded middleware",
+      "DDS bridge",
+      "MCU robotics"
+    ],
+    "file_name": "CVE-2025-63547.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-64151",
+    "title": "Roboticsware FA/BA/PA-Panel6 FA-Server6 Windows Services Unquoted Path Local Privilege Escalation",
+    "published": "2025-11-05",
+    "score": 8.4,
+    "severity": "HIGH",
+    "domains": [
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Roboticsware PTE. LTD."
+    ],
+    "tags": [
+      "industrial HMI",
+      "factory automation",
+      "Windows privilege escalation",
+      "OT/ICS",
+      "JPCERT/CC"
+    ],
+    "file_name": "CVE-2025-64151.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-33224",
+    "title": "NVIDIA Isaac Launchable Unnecessary Privilege Execution Information Disclosure and Data Tampering",
+    "published": "2025-12-23",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "model-deployment-security",
+      "data-integrity",
+      "fleet-management-risk"
+    ],
+    "file_name": "CVE-2025-33224.pavd.json"
   },
   {
     "cve_id": "CVE-2026-26741",
