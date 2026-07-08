@@ -345,6 +345,26 @@
     "file_name": "CVE-2026-28457.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32709",
+    "title": "PX4 Autopilot MAVLink FTP Unauthenticated Path Traversal Enables Arbitrary Filesystem Access",
+    "published": "2026-03-16",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "1.17.0-rc2 security fix batch",
+      "MAVLink FTP",
+      "unauthenticated protocol access"
+    ],
+    "file_name": "CVE-2026-32709.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53819",
     "title": "OpenClaw Workspace .env Override of Homebrew Executable Selection Enables Arbitrary Code Execution in Skill Install Flows",
     "published": "2026-07-02",
@@ -754,6 +774,25 @@
     "file_name": "CVE-2025-8749.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-55045",
+    "title": "Firmament-Autopilot FMT-Firmware Network-Reachable Buffer Overflow in MAVLink OBC Comm Task",
+    "published": "2026-05-13",
+    "score": 7.3,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "Firmament-Autopilot"
+    ],
+    "tags": [
+      "Firmament-Autopilot ecosystem",
+      "MAVLink OBC communication",
+      "network-reachable firmware DoS"
+    ],
+    "file_name": "CVE-2024-55045.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53865",
     "title": "OpenClaw Maintenance Task Workspace-Derived PATH Untrusted Search Path Arbitrary Command Execution",
     "published": "2026-06-16",
@@ -773,6 +812,25 @@
       "arbitrary-execution"
     ],
     "file_name": "CVE-2026-53865.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32705",
+    "title": "PX4 Autopilot BST Telemetry Probe Stack Buffer Overflow via Oversized Device Name Length",
+    "published": "2026-03-16",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "1.17.0-rc2 security fix batch",
+      "peripheral bus trust boundary"
+    ],
+    "file_name": "CVE-2026-32705.pavd.json"
   },
   {
     "cve_id": "CVE-2025-31932",
@@ -921,6 +979,27 @@
     "file_name": "CVE-2023-24012.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32724",
+    "title": "PX4 Autopilot MavlinkShell Heap-Use-After-Free Enables Remote MAVLink Task Crash",
+    "published": "2026-03-16",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "PX4"
+    ],
+    "tags": [
+      "MAVLink protocol",
+      "PX4 ecosystem",
+      "GitHub Security Advisory",
+      "part of a cluster of PX4 MAVLink-subsystem vulnerabilities patched around the PX4 1.17.0 release cycle (CVE-2026-32713, CVE-2026-32724, CVE-2026-32743)"
+    ],
+    "file_name": "CVE-2026-32724.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-24148",
     "title": "NVIDIA Jetson JetPack System Initialization Insecure Default Machine ID Information Disclosure and Data Tampering",
     "published": "2026-03-31",
@@ -992,6 +1071,27 @@
     "file_name": "CVE-2026-53818.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32708",
+    "title": "PX4 Autopilot Zenoh uORB Bridge Stack Overflow via Unbounded VLA Allocation",
+    "published": "2026-03-16",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "1.17.0-rc2 security fix batch",
+      "Zenoh middleware",
+      "companion-computer bridge"
+    ],
+    "file_name": "CVE-2026-32708.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-32014",
     "title": "OpenClaw Node Reconnect Metadata Spoofing Bypasses Platform-Based Command Policy via Unsigned Fields",
     "published": "2026-03-19",
@@ -1013,6 +1113,25 @@
       "unsigned"
     ],
     "file_name": "CVE-2026-32014.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-26741",
+    "title": "PX4 Autopilot Auto-to-Manual Mode Switch Missing Throttle Check Enables Drone Flyaway",
+    "published": "2026-03-10",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "flight-mode safety logic",
+      "arming/disarming logic flaw"
+    ],
+    "file_name": "CVE-2026-26741.pavd.json"
   },
   {
     "cve_id": "CVE-2026-4374",
@@ -1984,6 +2103,26 @@
     "file_name": "CVE-2025-6074.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-27476",
+    "title": "Bixat RustFly UDP Remote Control Command Injection Enables Full Drone Takeover",
+    "published": "2026-02-19",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "Bixat"
+    ],
+    "tags": [
+      "RustFly",
+      "Bixat",
+      "drone remote-control software",
+      "unauthenticated UDP control protocol"
+    ],
+    "file_name": "CVE-2026-27476.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-42432",
     "title": "OpenClaw Node Pairing Reconnect Bypasses operator.admin Scope Enabling Local Privilege Escalation to Exec Capability",
     "published": "2026-04-28",
@@ -2070,6 +2209,26 @@
     "file_name": "CVE-2025-65865.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-26673",
+    "title": "DJI Mavic Mini, Spark, Mavic Air and Mini SE Enhanced-WiFi Transmission Subsystem Remote Denial of Service",
+    "published": "2026-03-04",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "tags": [
+      "DJI consumer drone ecosystem",
+      "Enhanced-WiFi transmission",
+      "remote denial of service",
+      "flight-link disruption"
+    ],
+    "file_name": "CVE-2026-26673.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-12079",
     "title": "ECOVACS Robot Lawnmower Anti-Theft PIN Cleartext Storage Physical Anti-Theft Bypass",
     "published": "2025-01-23",
@@ -2111,6 +2270,44 @@
       "lifecycle-event-integrity"
     ],
     "file_name": "CVE-2026-53816.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-9020",
+    "title": "PX4-Autopilot Use-After-Free in MAVLink Shell Closing Handler",
+    "published": "2025-08-15",
+    "score": 4.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation)"
+    ],
+    "tags": [
+      "PX4 ecosystem",
+      "MAVLink shell",
+      "use-after-free memory corruption"
+    ],
+    "file_name": "CVE-2025-9020.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32706",
+    "title": "PX4 Autopilot CRSF RC Parser Fixed-Buffer Overflow via Oversized Packet",
+    "published": "2026-03-16",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "1.17.0-rc2 security fix batch",
+      "RC protocol trust boundary"
+    ],
+    "file_name": "CVE-2026-32706.pavd.json"
   },
   {
     "cve_id": "CVE-2023-3104",
@@ -2275,6 +2472,25 @@
     "file_name": "CVE-2024-39289.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-51395",
+    "title": "ArduPilot Copter Buffer Overflow in AP_SmartAudio VTX Control Component Causes Local Denial of Service",
+    "published": "2026-05-13",
+    "score": 6.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "ArduPilot"
+    ],
+    "tags": [
+      "ArduPilot ecosystem",
+      "SmartAudio VTX protocol",
+      "flight controller local DoS"
+    ],
+    "file_name": "CVE-2024-51395.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-62603",
     "title": "eProsima Fast-DDS ParticipantGenericMessage CDR Parser OOM Remote Denial of Service",
     "published": "2026-02-03",
@@ -2352,6 +2568,25 @@
       "browser-extension-attack"
     ],
     "file_name": "CVE-2026-1078.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-26742",
+    "title": "PX4 Autopilot Re-Arm Grace Period Logic Flaw Enables Uncommanded High-Thrust Takeoff",
+    "published": "2026-03-10",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "flight-mode safety logic",
+      "arming/disarming logic flaw"
+    ],
+    "file_name": "CVE-2026-26742.pavd.json"
   },
   {
     "cve_id": "CVE-2025-67111",
@@ -2533,6 +2768,25 @@
     "file_name": "CVE-2023-47335.pavt.json"
   },
   {
+    "cve_id": "CVE-2025-15150",
+    "title": "PX4-Autopilot Stack-Based Buffer Overflow in MAVLink Log Handler Affects Nearly All Releases",
+    "published": "2025-12-28",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation)"
+    ],
+    "tags": [
+      "PX4 ecosystem",
+      "MAVLink log handling",
+      "fleet-wide version exposure"
+    ],
+    "file_name": "CVE-2025-15150.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-9970",
     "title": "ABB MConfig Cleartext Storage of Sensitive Information in Memory Credential Exposure",
     "published": "2025-10-08",
@@ -2561,6 +2815,26 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-9225.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2025-60595",
+    "title": "SPH Engineering UgCS Ground Control Station Unauthenticated Remote Command Injection Enables Arbitrary Code Execution",
+    "published": "2025-10-29",
+    "score": 8.2,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "SPH Engineering"
+    ],
+    "tags": [
+      "ground control station compromise",
+      "command injection",
+      "mission-planning software",
+      "drone fleet operations"
+    ],
+    "file_name": "CVE-2025-60595.pavd.json"
   },
   {
     "cve_id": "CVE-2021-47662",
@@ -2743,6 +3017,26 @@
       "developer-tool-attack"
     ],
     "file_name": "CVE-2025-3753.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-1743",
+    "title": "DJI Mavic Mini, Air, Spark and Mini SE Enhanced Wi-Fi Pairing Authentication Bypass by Capture-Replay",
+    "published": "2026-02-02",
+    "score": 3.1,
+    "severity": "LOW",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "DJI"
+    ],
+    "tags": [
+      "DJI consumer drone ecosystem",
+      "Wi-Fi pairing authentication",
+      "capture-replay",
+      "unpatched vendor silence"
+    ],
+    "file_name": "CVE-2026-1743.pavd.json"
   },
   {
     "cve_id": "CVE-2026-28472",
@@ -2977,6 +3271,25 @@
     "file_name": "CVE-2025-14346.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32707",
+    "title": "PX4 Autopilot tattu_can Driver Unbounded memcpy Stack Overflow via Crafted CAN Frames",
+    "published": "2026-03-16",
+    "score": 5.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 Autopilot Project"
+    ],
+    "tags": [
+      "PX4",
+      "1.17.0-rc2 security fix batch",
+      "CAN bus trust boundary"
+    ],
+    "file_name": "CVE-2026-32707.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-12078",
     "title": "ECOVACS Robot Lawnmower Vacuum Shared Static BLE GATT Key Unauthenticated Remote Control",
     "published": "2025-01-23",
@@ -3061,6 +3374,27 @@
       "MITM"
     ],
     "file_name": "CVE-2024-52329.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-32713",
+    "title": "PX4 Autopilot MAVLink FTP Session Validation Logic Error Enables File Descriptor Isolation Bypass",
+    "published": "2026-03-16",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "PX4"
+    ],
+    "tags": [
+      "MAVLink protocol",
+      "PX4 ecosystem",
+      "GitHub Security Advisory",
+      "part of a cluster of PX4 MAVLink-subsystem vulnerabilities patched around the PX4 1.17.0 release cycle (CVE-2026-32713, CVE-2026-32724, CVE-2026-32743)"
+    ],
+    "file_name": "CVE-2026-32713.pavd.json"
   },
   {
     "cve_id": "CVE-2026-27510",
@@ -3288,6 +3622,25 @@
     "file_name": "CVE-2025-62799.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-51394",
+    "title": "ArduPilot Copter Buffer Overflow in AP_MSP OSD Telemetry Component Causes Local Denial of Service",
+    "published": "2026-05-13",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "ArduPilot"
+    ],
+    "tags": [
+      "ArduPilot ecosystem",
+      "MSP OSD telemetry",
+      "flight controller local DoS"
+    ],
+    "file_name": "CVE-2024-51394.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-62602",
     "title": "eProsima Fast-DDS SPDP Security Token Heap Buffer Overflow Remote Denial of Service",
     "published": "2026-02-03",
@@ -3468,6 +3821,25 @@
     "file_name": "CVE-2026-0898.pavd.json"
   },
   {
+    "cve_id": "CVE-2024-40427",
+    "title": "PX4-Autopilot Local Stack Buffer Overflow Crashes Flight Controller Firmware",
+    "published": "2025-01-07",
+    "score": 7.9,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation)"
+    ],
+    "tags": [
+      "PX4 ecosystem",
+      "flight controller firmware crash",
+      "local DoS on autopilot"
+    ],
+    "file_name": "CVE-2024-40427.pavd.json"
+  },
+  {
     "cve_id": "CVE-2021-47663",
     "title": "Franka Emika Robot Improper JWT Implementation Session Hijacking Full Access",
     "published": "2025-04-24",
@@ -3525,6 +3897,27 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-6073.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-1579",
+    "title": "MAVLink Protocol Missing Authentication by Default Enables Unauthenticated Drone Command and Shell Access",
+    "published": "2026-03-31",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation) / MAVLink protocol maintainers"
+    ],
+    "tags": [
+      "MAVLink protocol security",
+      "default-insecure configuration",
+      "CISA ICS advisory",
+      "drone command hijacking",
+      "message signing"
+    ],
+    "file_name": "CVE-2026-1579.pavd.json"
   },
   {
     "cve_id": "CVE-2025-13777",
@@ -3714,6 +4107,27 @@
     "file_name": "CVE-2025-45467.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-32743",
+    "title": "PX4 Autopilot MavlinkLogHandler Stack Buffer Overflow Enables Remote Denial of Service",
+    "published": "2026-03-19",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "PX4"
+    ],
+    "tags": [
+      "MAVLink protocol",
+      "PX4 ecosystem",
+      "GitHub Security Advisory",
+      "part of a cluster of PX4 MAVLink-subsystem vulnerabilities patched around the PX4 1.17.0 release cycle (CVE-2026-32713, CVE-2026-32724, CVE-2026-32743)"
+    ],
+    "file_name": "CVE-2026-32743.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-63547",
     "title": "eProsima Micro-XRCE-DDS Agent MTU Length Field Buffer Access Remote Denial of Service",
     "published": "2026-05-01",
@@ -3754,6 +4168,25 @@
       "JPCERT/CC"
     ],
     "file_name": "CVE-2025-64151.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-48519",
+    "title": "ArduPilot Rover Buffer Overflow in ADIS1647x IMU Driver Causes Local Denial of Service",
+    "published": "2026-05-13",
+    "score": 6.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "ArduPilot"
+    ],
+    "tags": [
+      "ArduPilot ecosystem",
+      "IMU sensor driver crash",
+      "ground rover local DoS"
+    ],
+    "file_name": "CVE-2024-48519.pavd.json"
   },
   {
     "cve_id": "CVE-2025-33224",
