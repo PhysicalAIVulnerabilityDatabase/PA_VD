@@ -1,8 +1,10 @@
-# PA_VD — Physical AI Vulnerability Database
+# FaultLine — Physical AI Vulnerability Database
 
-**An open, structured, and continuously enriched database of publicly disclosed vulnerabilities affecting Physical AI systems** — humanoid robots, industrial robots, mobile robots (AMR), drones, service/companion robots, autonomous vehicles, and the AI middleware, frameworks, and edge-compute hardware that power them.
+**Where software faults meet the physical world.**
 
-**PA_VD is not a mirror of NVD.** It takes CVEs sourced from NVD, ZDI, vendor PSIRT advisories, GitHub Security Advisories, and CISA ICS advisories, and re-processes each one with domain-specific enrichment — turning a plain vulnerability advisory into actionable intelligence for robots, AMRs, humanoids, service robots, drones, industrial robots, and AV AI stacks. The approach mirrors what VicOne has already done for automotive with **AutoVulnDB**: take a generic CVE and translate it into "how does this actually get exploited on this class of physical system, and what happens in the real world when it does."
+FaultLine is an open, community-driven vulnerability database focused on **Physical AI** systems — humanoid robots, industrial robots, autonomous mobile robots (AMR), drones, service robots, autonomous vehicles, and the middleware, AI models, and edge hardware that power them.
+
+**FaultLine is not a mirror of NVD.** It takes CVEs sourced from NVD, ZDI, vendor PSIRT advisories, GitHub Security Advisories, and CISA ICS advisories, and re-processes each one with domain-specific enrichment — turning a plain vulnerability advisory into actionable intelligence for robots, AMRs, humanoids, service robots, drones, industrial robots, and AV AI stacks. The approach mirrors what VicOne has already done for automotive with **AutoVulnDB**: take a generic CVE and translate it into "how does this actually get exploited on this class of physical system, and what happens in the real world when it does."
 
 🔍 **[Browse the Vulnerability Explorer](https://physicalaivulnerabilitydatabase.github.io/PA_VD/)** — search and filter by domain, vendor, and severity across the full dataset.
 
@@ -12,7 +14,7 @@ Sponsored by [VicOne Inc.](https://vicone.com)
 
 ## Why a Physical AI Vulnerability Database?
 
-Physical AI — robots, drones, autonomous vehicles, and embodied agents that perceive, decide, and act in the physical world — is being deployed at scale across manufacturing, logistics, healthcare, agriculture, and defense. Unlike traditional IT vulnerabilities, a flaw in a Physical AI stack does not just leak data — **it can cause a robot to collide, a drone to crash, a manipulator arm to injure someone, or an autonomous vehicle to misjudge the road.**
+Physical AI — robots, drones, autonomous vehicles, and embodied agents that perceive, decide, and act in the physical world — is being deployed at scale across manufacturing, logistics, healthcare, agriculture, and defense. Unlike traditional IT vulnerabilities, a flaw in a Physical AI stack does not just leak data — **it can cause a robot to collide, a drone to crash, a manipulator arm to injure someone, or an autonomous vehicle to misjudge the road.** That's the fault line FaultLine tracks: the point where a software bug crosses over into physical consequence.
 
 Yet today, vulnerability intelligence for this domain is fragmented and shallow:
 
@@ -21,7 +23,7 @@ Yet today, vulnerability intelligence for this domain is fragmented and shallow:
 - **No attack-surface mapping to the Physical AI stack** — a vulnerability in DDS/ROS 2 middleware, a perception model, a motion planner, or an edge AI chip (e.g. NVIDIA Jetson) requires different mitigations, but generic vulnerability feeds don't map CVEs to this architecture.
 - **Hard to correlate across an ecosystem of shared components** — the same ROS 2 / DDS / PX4 / firmware vulnerability can affect dozens of unrelated robot and drone vendors that build on the same open-source or commercial building blocks, but this fan-out is invisible in vendor-specific advisories.
 
-**PA_VD closes this gap** by re-classifying and enriching public vulnerability data specifically through a Physical AI lens: mapping every CVE to a Physical AI domain and attack surface, reconstructing plausible attack chains, and describing the physical-world consequence — so that manufacturers, researchers, red teams, and defenders can reason about robot and embodied AI security the way they already reason about IT security.
+**FaultLine closes this gap** by re-classifying and enriching public vulnerability data specifically through a Physical AI lens: mapping every CVE to a Physical AI domain and attack surface, reconstructing plausible attack chains, and describing the physical-world consequence — so that manufacturers, researchers, red teams, and defenders can reason about robot and embodied AI security the way they already reason about IT security.
 
 ## What's Inside
 
@@ -50,7 +52,7 @@ This dataset grows continuously as new advisories are triaged and re-classified 
 
 ### Attack Surface & Supply Chain Coverage
 
-Beyond top-level domains, every record is tagged with a `technical_layer`, so risk can be sliced by where in the stack a flaw actually lives — this is what makes PA_VD useful for supply-chain and SBOM triage, not just "which robot is affected":
+Beyond top-level domains, every record is tagged with a `technical_layer`, so risk can be sliced by where in the stack a flaw actually lives — this is what makes FaultLine useful for supply-chain and SBOM triage, not just "which robot is affected":
 
 Middleware / Communication Layer (54, e.g. ROS 2 / DDS / MAVLink) · Network / Connectivity (48) · Hardware / Firmware (42) · Robot OS / Development Tools (37) · Physical AI Infrastructure / MLOps (25) · Distribution / Supply Chain (9) · Mobile Companion App (8) · AI/ML Runtime / Inference (7) · AI/ML Training Pipeline (2)
 
@@ -58,14 +60,14 @@ Frequently recurring `cross_domain_tags` (useful as ready-made detection/threat-
 
 ### Case Studies
 
-Two examples of how PA_VD turns a generic advisory into a physical-consequence-first record:
+Two examples of how FaultLine turns a generic advisory into a physical-consequence-first record:
 
-- **[CVE-2024-9876](./CVE-json/CVE-2024-9876.pavd.json) — ABB ANC Navigation Controller (Modification of Assumed-Immutable Data / CWE-471).** An authenticated attacker on the adjacent network can modify navigation data — maps, waypoints, safety-zone boundaries — that the AMR treats as immutable at runtime. PA_VD's reconstructed consequence: *"AMRs using the ANC for navigation receive corrupted map/path data... robots may enter restricted areas, fail to avoid obstacles, or collide with workers or infrastructure."* CVSS 3.1 tells you it's a 7.3/HIGH integrity issue; PA_VD tells you it's a warehouse-floor collision risk, and names the design fix (write-protect safety-critical navigation data, separate read/write authorization).
-- **[CVE-2026-10557](./CVE-json/CVE-2026-10557.pavd.json) — Yarbo Mobile App Hard-Coded MQTT Credentials (CWE-798).** A single set of MQTT broker credentials is hard-coded into every copy of the Yarbo companion app and extractable via APK decompilation, granting wildcard-topic access to the entire global fleet's telemetry and command channels. PA_VD's reconstructed consequence: *"attacker gains real-time visibility and command execution over the entire global Yarbo autonomous lawn mower fleet; can direct robots into unsafe zones near children or pets."* This is the kind of supply-chain/companion-app/cloud-MQTT risk that a CVSS score alone (9.3/CRITICAL here) doesn't communicate to a product or risk-management audience.
+- **[CVE-2024-9876](./CVE-json/CVE-2024-9876.pavd.json) — ABB ANC Navigation Controller (Modification of Assumed-Immutable Data / CWE-471).** An authenticated attacker on the adjacent network can modify navigation data — maps, waypoints, safety-zone boundaries — that the AMR treats as immutable at runtime. FaultLine's reconstructed consequence: *"AMRs using the ANC for navigation receive corrupted map/path data... robots may enter restricted areas, fail to avoid obstacles, or collide with workers or infrastructure."* CVSS 3.1 tells you it's a 7.3/HIGH integrity issue; FaultLine tells you it's a warehouse-floor collision risk, and names the design fix (write-protect safety-critical navigation data, separate read/write authorization).
+- **[CVE-2026-10557](./CVE-json/CVE-2026-10557.pavd.json) — Yarbo Mobile App Hard-Coded MQTT Credentials (CWE-798).** A single set of MQTT broker credentials is hard-coded into every copy of the Yarbo companion app and extractable via APK decompilation, granting wildcard-topic access to the entire global fleet's telemetry and command channels. FaultLine's reconstructed consequence: *"attacker gains real-time visibility and command execution over the entire global Yarbo autonomous lawn mower fleet; can direct robots into unsafe zones near children or pets."* This is the kind of supply-chain/companion-app/cloud-MQTT risk that a CVSS score alone (9.3/CRITICAL here) doesn't communicate to a product or risk-management audience.
 
-### How PA_VD Differs from NVD / Generic CVE Feeds
+### How FaultLine Differs from NVD / Generic CVE Feeds
 
-| Dimension | NVD / generic CVE feed | PA_VD |
+| Dimension | NVD / generic CVE feed | FaultLine |
 |---|---|---|
 | Technical depth | Description + CVSS score | + reconstructed attack path, `physical_consequence`, `robot_safety_impact` |
 | Domain focus | Generic, no product-class context | Explicit Physical AI domain + `technical_layer` tagging (middleware, firmware, MLOps, companion app, cloud, ...) |
@@ -74,9 +76,9 @@ Two examples of how PA_VD turns a generic advisory into a physical-consequence-f
 
 ## Possible Use Cases
 
-PA_VD is designed to serve every stakeholder who needs to reason about security risk across the Physical AI lifecycle — from the engineer writing robot firmware to the regulator drafting the next AI safety standard.
+FaultLine is designed to serve every stakeholder who needs to reason about security risk across the Physical AI lifecycle — from the engineer writing robot firmware to the regulator drafting the next AI safety standard.
 
-| User Role | Scenario | How PA_VD Helps | Business Value |
+| User Role | Scenario | How FaultLine Helps | Business Value |
 |---|---|---|---|
 | **Robot Manufacturer** | Assess newly disclosed vulnerabilities affecting products | Quickly identify affected robot models, AI components, firmware versions, attack surfaces, and mitigation guidance | Reduce vulnerability analysis time and accelerate patch deployment |
 | **Product Security Incident Response Team (PSIRT)** | Analyze and respond to reported security issues | Provide enriched CVE information including root cause, attack path, references, exploit status, and remediation recommendations | Improve incident response efficiency and vulnerability prioritization |
@@ -100,12 +102,12 @@ PA_VD is designed to serve every stakeholder who needs to reason about security 
 
 ## Recommended Workflow
 
-A few concrete ways to work PA_VD into an existing process, derived from the enrichment fields above:
+A few concrete ways to work FaultLine into an existing process, derived from the enrichment fields above:
 
 1. **Design-time safety-boundary review.** Filter by `attack_surface` + `technical_layer` for your product class (e.g. "adjacent network + authenticated low-privilege → modifies navigation/safety data") and turn recurring patterns into architecture requirements — e.g. safety-critical data must have cryptographic integrity protection and separated write privileges. Feed the `attack_chain` into a red-team script and reproduce the behavioral deviation in simulation (e.g. Isaac Sim) or on hardware.
 2. **Supply-chain / SBOM triage.** Filter by `domain` + `vendor` + `product` for third-party navigation controllers, ROS 2 packages, MQTT brokers, or companion apps you're integrating — prioritize by `physical_consequence`, not raw CVSS. A hard-coded-credential pattern like Yarbo's should trigger a design decision (per-device certificates, short-lived tokens) wherever a similar cloud-command channel exists in your own stack.
 3. **Pre-deployment security testing & continuous monitoring.** Convert an `attack_chain` directly into a penetration-test script (e.g. "unpack companion app → extract broker credentials → command a target serial number"). Map `technical_layer` and `physical_consequence` against your threat model's attack layers (physical / perception / AI model / wireless / cloud) to check for coverage gaps.
-4. **Threat hunting & incident response.** Use `cross_domain_tags` (`mass-fleet-attack`, `map-tampering`, `ros2-authentication`, ...) to seed detection rules; when a new advisory shares an attack surface with an existing PA_VD record (e.g. hard-coded credentials, unauthenticated physical port, writable navigation data), reuse its `physical_consequence` to triage worst-case impact immediately.
+4. **Threat hunting & incident response.** Use `cross_domain_tags` (`mass-fleet-attack`, `map-tampering`, `ros2-authentication`, ...) to seed detection rules; when a new advisory shares an attack surface with an existing FaultLine record (e.g. hard-coded credentials, unauthenticated physical port, writable navigation data), reuse its `physical_consequence` to triage worst-case impact immediately.
 5. **Academic and open-source research.** Use `attack_chain` and `physical_world_impact` as grounded, real-world case material instead of purely theoretical attacks; compare `root_cause` across domains (AMR vs. humanoid vs. service robot) to surface cross-domain patterns (e.g. "safety-critical data treated as ordinary writable data"). Contribute enrichment for newly found issues back via pull request.
 6. **Risk communication to non-technical stakeholders.** Translate "CVSS 7.3" into "this could let an AMR collide with a warehouse worker" for product, legal, insurance, and customer-facing conversations — and cite systematic Physical-AI-specific coverage in whitepapers, investor materials, or customer security assurances.
 
@@ -118,7 +120,7 @@ A few concrete ways to work PA_VD into an existing process, derived from the enr
 ## Repository Structure
 
 ```
-PA_VD/
+FaultLine/
 ├── CVE-json/            # One enriched *.pavd.json record per CVE (the source of truth)
 ├── index.json           # Lightweight generated index (cve_id, title, severity, domains, vendors, tags)
 ├── generate_index.py    # Rebuilds index.json by scanning CVE-json/
@@ -155,7 +157,7 @@ Please cite primary sources (NVD, vendor advisories, GitHub Security Advisories)
 
 ## Disclaimer
 
-PA_VD aggregates and re-classifies **publicly disclosed** vulnerability information for defensive research, risk assessment, and education. Attack-chain reconstructions and physical-impact scenarios are analytical interpretations, not verified exploit demonstrations. This project does not publish or endorse offensive use against systems without authorization.
+FaultLine aggregates and re-classifies **publicly disclosed** vulnerability information for defensive research, risk assessment, and education. Attack-chain reconstructions and physical-impact scenarios are analytical interpretations, not verified exploit demonstrations. This project does not publish or endorse offensive use against systems without authorization.
 
 ## License
 
@@ -163,4 +165,4 @@ See individual advisories for source attribution. Unless otherwise noted, the cu
 
 ---
 
-Maintained by the **Physical AI Vulnerability Database** project · Sponsored by [VicOne Inc.](https://vicone.com)
+Maintained by the **FaultLine** project · Sponsored by [VicOne Inc.](https://vicone.com)
