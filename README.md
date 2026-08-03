@@ -123,8 +123,7 @@ PA_VD/
 ├── index.json           # Lightweight generated index (cve_id, title, severity, domains, vendors, tags)
 ├── generate_index.py    # Rebuilds index.json by scanning CVE-json/
 ├── index.html           # Vulnerability Explorer — search & filter UI (GitHub Pages)
-├── app.js               # Explorer front-end logic
-└── index.zh.html         # Traditional Chinese UI variant
+└── app.js               # Explorer front-end logic
 ```
 
 ## Getting Started
