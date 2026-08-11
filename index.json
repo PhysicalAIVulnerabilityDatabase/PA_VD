@@ -102,6 +102,28 @@
     "file_name": "CVE-2026-56767.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24149",
+    "title": "NVIDIA Megatron-LM Script Code Injection Remote Code Execution",
+    "published": "2026-02-03",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "code injection",
+      "CWE-94",
+      "training pipeline supply chain"
+    ],
+    "file_name": "CVE-2026-24149.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-1254",
     "title": "RTI Connext Professional Recording Service Out-of-Bounds Read Write Remote Memory Corruption",
     "published": "2025-05-08",
@@ -386,6 +408,29 @@
       "workspace-security"
     ],
     "file_name": "CVE-2026-53819.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2022-42268",
+    "title": "NVIDIA Omniverse Kit USD Embedded Python Code Execution Across Reference Applications",
+    "published": "2023-01-13",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Robot Operating Systems & Middleware",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "Omniverse Kit shared framework vulnerability",
+      "USD file format code execution",
+      "Isaac Sim robot simulation integrity",
+      "cross-application vulnerability (6 reference apps)",
+      "3D scene asset supply chain"
+    ],
+    "file_name": "CVE-2022-42268.pavd.json"
   },
   {
     "cve_id": "CVE-2024-51456",
@@ -1115,6 +1160,29 @@
     "file_name": "CVE-2026-32014.pavd.json"
   },
   {
+    "cve_id": "CVE-2025-33201",
+    "title": "NVIDIA Triton Inference Server Oversized-Payload Denial of Service",
+    "published": "2025-12-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "inference-serving DoS",
+      "CWE-754",
+      "network-exploitable",
+      "automatable"
+    ],
+    "file_name": "CVE-2025-33201.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-26741",
     "title": "PX4 Autopilot Auto-to-Manual Mode Switch Missing Throttle Check Enables Drone Flyaway",
     "published": "2026-03-10",
@@ -1669,6 +1737,28 @@
     "file_name": "CVE-2026-8113.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24157",
+    "title": "NVIDIA NeMo Framework Insecure Checkpoint Deserialization Remote Code Execution",
+    "published": "2026-03-24",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "pickle deserialization",
+      "checkpoint supply chain",
+      "CWE-502 cluster with CVE-2026-24228, CVE-2026-24237, CVE-2026-24162"
+    ],
+    "file_name": "CVE-2026-24157.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-1283",
     "title": "Dingtian DT-R0 Series Authentication Bypass Direct Navigation Full Device Control",
     "published": "2025-02-13",
@@ -1878,6 +1968,25 @@
       "deferred-execution"
     ],
     "file_name": "CVE-2026-35648.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-24162",
+    "title": "NVIDIA Transformers4Rec Insecure Deserialization Remote Code Execution",
+    "published": "2026-05-26",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Merlin stack",
+      "pickle deserialization",
+      "CWE-502 cluster with CVE-2026-24157, CVE-2026-24228, CVE-2026-24237"
+    ],
+    "file_name": "CVE-2026-24162.pavd.json"
   },
   {
     "cve_id": "CVE-2026-24212",
@@ -3460,6 +3569,25 @@
     "file_name": "CVE-2026-24153.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24237",
+    "title": "NVIDIA NVTabular Insecure Deserialization Remote Code Execution",
+    "published": "2026-06-02",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Merlin stack",
+      "pickle deserialization",
+      "CWE-502 cluster with CVE-2026-24157, CVE-2026-24228, CVE-2026-24162"
+    ],
+    "file_name": "CVE-2026-24237.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-41386",
     "title": "OpenClaw Unbound Bootstrap Setup Codes Enable Privilege Escalation During First-Use Device Pairing",
     "published": "2026-04-28",
@@ -3819,6 +3947,28 @@
       "supply-chain-risk"
     ],
     "file_name": "CVE-2026-0898.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-24228",
+    "title": "NVIDIA NeMo Framework for Linux Insecure Deserialization Remote Code Execution",
+    "published": "2026-06-16",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Embodied AI Agent",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "unsafe deserialization",
+      "regression of CVE-2026-24157",
+      "CWE-502 cluster with CVE-2026-24157, CVE-2026-24237, CVE-2026-24162"
+    ],
+    "file_name": "CVE-2026-24228.pavd.json"
   },
   {
     "cve_id": "CVE-2024-40427",
