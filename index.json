@@ -81,6 +81,52 @@
     "file_name": "CVE-2025-41109.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-53605",
+    "title": "Pollen Robotics Reachy Mini Wireless OS Unrestricted sudo systemctl Grant Local Privilege Escalation",
+    "published": "2026-06-11",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Pollen Robotics"
+    ],
+    "tags": [
+      "Reachy Mini",
+      "Pollen Robotics",
+      "CWE-250",
+      "CWE-269",
+      "sudo misconfiguration",
+      "systemd unit file abuse",
+      "JFrog Security Research",
+      "GHSA-7rhg-9v48-x3h2",
+      "not present in NVD/MITRE as of 2026-08-11"
+    ],
+    "file_name": "CVE-2026-53605.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-66408",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC Weak Root Account Password Physical Device Compromise",
+    "published": "2026-08-10",
+    "score": 4.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-1391",
+      "physical access vector",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407, CVE-2026-66409, CVE-2026-66410, CVE-2026-66411"
+    ],
+    "file_name": "CVE-2026-66408.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-56767",
     "title": "Maxun Cross-Tenant IDOR in Storage and Webhook API Handlers OAuth Token Exposure",
     "published": "2026-06-25",
@@ -100,6 +146,29 @@
       "IDOR"
     ],
     "file_name": "CVE-2026-56767.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-12989",
+    "title": "Ghost Robotics Vision 60 Mobile App Missing Authentication Unrestricted Robot Control and Camera Access",
+    "published": "2026-07-27",
+    "score": 8.7,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "Ghost Robotics",
+      "quadruped UGV",
+      "CWE-306",
+      "INCIBE-CERT coordinated disclosure",
+      "defense-adjacent robotics",
+      "companion of CVE-2026-12990, CVE-2026-12991"
+    ],
+    "file_name": "CVE-2026-12989.pavd.json"
   },
   {
     "cve_id": "CVE-2026-24149",
@@ -325,6 +394,27 @@
     "file_name": "CVE-2025-62601.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-66411",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC WebSocket Authentication Bypass Unauthenticated Robot Control",
+    "published": "2026-08-10",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-303",
+      "CVSS-severity discrepancy",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407, CVE-2026-66408, CVE-2026-66409, CVE-2026-66410"
+    ],
+    "file_name": "CVE-2026-66411.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-52327",
     "title": "ECOVACS Cloud Service PIN Bypass Unauthorized Live Video Feed Access",
     "published": "2025-01-23",
@@ -451,6 +541,27 @@
       "data-exposure"
     ],
     "file_name": "CVE-2024-51456.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-66405",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC Enabled Telnet Service Unauthorized Device Compromise",
+    "published": "2026-08-10",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-489",
+      "IoT botnet vector",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66406, CVE-2026-66407"
+    ],
+    "file_name": "CVE-2026-66405.pavd.json"
   },
   {
     "cve_id": "CVE-2026-32034",
@@ -586,6 +697,28 @@
       "unsafe-deserialization"
     ],
     "file_name": "CVE-2024-39780.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-12990",
+    "title": "Ghost Robotics Vision 60 Mobile App Concurrent Session Hijacking Video Interception",
+    "published": "2026-07-27",
+    "score": 7.7,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "Ghost Robotics",
+      "quadruped UGV",
+      "CWE-284",
+      "INCIBE-CERT coordinated disclosure",
+      "defense-adjacent robotics"
+    ],
+    "file_name": "CVE-2026-12990.pavd.json"
   },
   {
     "cve_id": "CVE-2024-12740",
@@ -795,6 +928,26 @@
     "file_name": "CVE-2026-53850.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-66403",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC Exposed Debug Web Server Floor Map and Log Disclosure",
+    "published": "2026-08-10",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-489",
+      "companion of CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407"
+    ],
+    "file_name": "CVE-2026-66403.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-8749",
     "title": "Mobile Industrial Robots MiR Software API Path Traversal Authenticated File Extraction",
     "published": "2025-08-08",
@@ -916,6 +1069,26 @@
       "wireless-attack"
     ],
     "file_name": "CVE-2025-41108.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-66409",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC Weak Wi-Fi Hotspot Password Unauthorized Network Access",
+    "published": "2026-08-10",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-1391",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407, CVE-2026-66408, CVE-2026-66410, CVE-2026-66411"
+    ],
+    "file_name": "CVE-2026-66409.pavd.json"
   },
   {
     "cve_id": "CVE-2024-9877",
@@ -1183,6 +1356,26 @@
     "file_name": "CVE-2025-33201.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-66404",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC MQTT Certificate Validation Bypass Information Disclosure",
+    "published": "2026-08-10",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-295",
+      "companion of CVE-2026-66403, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407"
+    ],
+    "file_name": "CVE-2026-66404.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-26741",
     "title": "PX4 Autopilot Auto-to-Manual Mode Switch Missing Throttle Check Enables Drone Flyaway",
     "published": "2026-03-10",
@@ -1339,6 +1532,26 @@
     "file_name": "CVE-2025-23296.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-66410",
+    "title": "ECOVACS PRO Mobile App Improper Certificate Validation Man-in-the-Middle",
+    "published": "2026-08-10",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS PRO app",
+      "JVNVU#92804348 disclosure group",
+      "CWE-295",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407, CVE-2026-66408, CVE-2026-66409, CVE-2026-66411"
+    ],
+    "file_name": "CVE-2026-66410.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-48849",
     "title": "ABB FLXEON Edge Controller WebSocket Missing Origin Validation Unauthorized Request Execution",
     "published": "2025-01-29",
@@ -1377,6 +1590,30 @@
       "research-infrastructure"
     ],
     "file_name": "CVE-2024-53320.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-12991",
+    "title": "Ghost Robotics Vision 60 Mobile App Missing Cryptographic Integrity ARP Spoofing Man-in-the-Middle Control Hijack",
+    "published": "2026-07-27",
+    "score": 8.7,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Industrial Robot"
+    ],
+    "vendors": [
+      "Ghost Robotics"
+    ],
+    "tags": [
+      "Ghost Robotics",
+      "quadruped UGV",
+      "CWE-300",
+      "ARP spoofing",
+      "INCIBE-CERT coordinated disclosure",
+      "defense-adjacent robotics",
+      "companion of CVE-2026-12989, CVE-2026-12990"
+    ],
+    "file_name": "CVE-2026-12991.pavd.json"
   },
   {
     "cve_id": "CVE-2025-23356",
@@ -2698,6 +2935,26 @@
     "file_name": "CVE-2026-26742.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-66407",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC WebSocket Improper Authentication Key Recovery Man-in-the-Middle",
+    "published": "2026-08-10",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-327",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66406"
+    ],
+    "file_name": "CVE-2026-66407.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-67111",
     "title": "OpenDDS RTPS Protocol Integer Overflow Denial of Service",
     "published": "2025-12-23",
@@ -3748,6 +4005,27 @@
       "critical severity"
     ],
     "file_name": "CVE-2025-62799.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-66406",
+    "title": "ECOVACS DEEBOT PRO M1/K1VAC wget Certificate Validation Bypass Man-in-the-Middle Code Execution",
+    "published": "2026-08-10",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "ECOVACS ROBOTICS"
+    ],
+    "tags": [
+      "ECOVACS DEEBOT",
+      "JVNVU#92804348 disclosure group",
+      "CWE-295",
+      "CVSS-severity discrepancy",
+      "companion of CVE-2026-66403, CVE-2026-66404, CVE-2026-66405, CVE-2026-66407"
+    ],
+    "file_name": "CVE-2026-66406.pavd.json"
   },
   {
     "cve_id": "CVE-2024-51394",
