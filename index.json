@@ -588,6 +588,32 @@
     "file_name": "CVE-2026-66405.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-55419",
+    "title": "Pollen Robotics Reachy Mini Daemon Unrestricted File Upload in Media Sounds API Enables Arbitrary File Write",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Pollen Robotics"
+    ],
+    "tags": [
+      "Reachy Mini",
+      "Pollen Robotics",
+      "CWE-434",
+      "unrestricted file upload",
+      "unauthenticated API",
+      "permissive CORS",
+      "JFrog Security Research",
+      "compromise-chain step 1",
+      "companion of Bluetooth auth bypass and directory traversal CVEs",
+      "companion of CVE-2026-53605",
+      "not present in NVD as of enrichment"
+    ],
+    "file_name": "CVE-2026-55419.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-32034",
     "title": "OpenClaw Control UI Insecure Authentication over Plaintext HTTP Allows Privileged Access Bypass",
     "published": "2026-03-19",
