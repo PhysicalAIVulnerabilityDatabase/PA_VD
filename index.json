@@ -127,6 +127,30 @@
     "file_name": "CVE-2026-66408.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-38971",
+    "title": "ArduPilot Plane GCS_MAVLink Serial Control Out-of-Bounds Read Remote Denial of Service and Information Disclosure",
+    "published": "2026-07-02",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "ArduPilot"
+    ],
+    "tags": [
+      "ArduPilot",
+      "MAVLink",
+      "GCS_MAVLink",
+      "CWE-125",
+      "out-of-bounds read",
+      "fixed-wing UAV",
+      "flight controller firmware",
+      "PoC exploit available"
+    ],
+    "file_name": "CVE-2026-38971.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-56767",
     "title": "Maxun Cross-Tenant IDOR in Storage and Webhook API Handlers OAuth Token Exposure",
     "published": "2026-06-25",
@@ -1132,6 +1156,30 @@
       "ai-agent-framework"
     ],
     "file_name": "CVE-2026-45006.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-38891",
+    "title": "Gazebo gazebo_ros_diff_drive Plugin Crafted Twist Message Improper Input Validation Denial of Service",
+    "published": "2026-07-01",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Open Robotics / Gazebo project"
+    ],
+    "tags": [
+      "Gazebo",
+      "gazebo_plugins",
+      "ROS",
+      "CWE-20",
+      "differential-drive robot simulation",
+      "denial of service",
+      "simulation robustness"
+    ],
+    "file_name": "CVE-2026-38891.pavd.json"
   },
   {
     "cve_id": "CVE-2025-64098",
