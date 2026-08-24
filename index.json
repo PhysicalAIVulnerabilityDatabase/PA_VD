@@ -614,6 +614,27 @@
     "file_name": "CVE-2026-55419.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24234",
+    "title": "NVIDIA TensorRT-LLM Multimodal Media Fetch Server-Side Request Forgery Enabling Cross-System Denial of Service and Information Disclosure",
+    "published": "2026-07-14",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "SSRF",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24259, -47470, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-24234.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-32034",
     "title": "OpenClaw Control UI Insecure Authentication over Plaintext HTTP Allows Privileged Access Bypass",
     "published": "2026-03-19",
@@ -771,6 +792,27 @@
     "file_name": "CVE-2026-12990.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24220",
+    "title": "NVIDIA TensorRT-LLM Visual Generation Server Unsafe ZeroMQ Deserialization Enabling Code Execution",
+    "published": "2026-07-14",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "multimodal inference server",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-24220.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-12740",
     "title": "NI Vision Software Vulnerable Third-Party Image Processing Library Arbitrary Code Execution",
     "published": "2025-01-27",
@@ -902,6 +944,27 @@
     "file_name": "CVE-2025-7677.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47630",
+    "title": "NVIDIA Triton Inference Server Local Absolute Path Traversal Enabling Information Disclosure and Potential Code Execution",
+    "published": "2026-08-18",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLOps inference server",
+      "part of NVIDIA Security Bulletin 5865 path-traversal cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
+    ],
+    "file_name": "CVE-2026-47630.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-47784",
     "title": "ABB ANC Navigation Controller Unverified Password Change Authentication Bypass",
     "published": "2025-04-30",
@@ -957,6 +1020,25 @@
     "file_name": "CVE-2025-60017.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24226",
+    "title": "NVIDIA TensorRT-LLM Untrusted Control Sphere Inclusion Enabling Code Execution and Data Tampering",
+    "published": "2026-07-14",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-24226.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-53850",
     "title": "OpenClaw Focus Command Missing controlScope Enforcement Unauthorized State Change",
     "published": "2026-06-16",
@@ -976,6 +1058,26 @@
       "authorization-bypass"
     ],
     "file_name": "CVE-2026-53850.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47629",
+    "title": "NVIDIA Triton Inference Server Unauthenticated Improper Input Validation Enabling Denial of Service",
+    "published": "2026-08-18",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLOps inference server",
+      "part of NVIDIA Security Bulletin 5865 cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
+    ],
+    "file_name": "CVE-2026-47629.pavd.json"
   },
   {
     "cve_id": "CVE-2026-66403",
@@ -1060,6 +1162,27 @@
       "arbitrary-execution"
     ],
     "file_name": "CVE-2026-53865.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47471",
+    "title": "NVIDIA TensorRT-LLM Adjacent-Network Tensor Deserialization Heap Buffer Overflow Enabling Information Disclosure and Denial of Service",
+    "published": "2026-07-14",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "tensor deserialization",
+      "adjacent-network attack vector",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-47471.pavd.json"
   },
   {
     "cve_id": "CVE-2026-32705",
@@ -1248,6 +1371,26 @@
     "file_name": "CVE-2026-2330.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47487",
+    "title": "NVIDIA Triton Inference Server MLflow Plugin Path Traversal Enabling Arbitrary File Access and Denial of Service",
+    "published": "2026-08-04",
+    "score": 4.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLflow model registry integration",
+      "MLOps inference server"
+    ],
+    "file_name": "CVE-2026-47487.pavd.json"
+  },
+  {
     "cve_id": "CVE-2023-24012",
     "title": "OpenDDS PKCS#7 Certificate Validation Bypass ROS 2 Secure Databus Full Compromise",
     "published": "2025-01-09",
@@ -1310,6 +1453,27 @@
       "machine-identity"
     ],
     "file_name": "CVE-2026-24148.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-24238",
+    "title": "NVIDIA TensorRT Improper Array Index Validation via Malicious Model File Enabling Code Execution and Data Tampering",
+    "published": "2026-07-14",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT",
+      "malicious model file",
+      "improper array index validation",
+      "shares NVIDIA Security Bulletin a_id/5855 with CVE-2026-24268, CVE-2026-24272, CVE-2026-24227"
+    ],
+    "file_name": "CVE-2026-24238.pavd.json"
   },
   {
     "cve_id": "CVE-2025-60251",
@@ -2048,6 +2212,28 @@
     "file_name": "CVE-2026-8113.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24227",
+    "title": "NVIDIA TensorRT Network-Reachable Deserialization of Untrusted Data Enabling Availability Impact",
+    "published": "2026-07-14",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT",
+      "network-reachable deserialization",
+      "automatable",
+      "shares NVIDIA Security Bulletin a_id/5855 with CVE-2026-24268, CVE-2026-24238, CVE-2026-24272",
+      "vendor-summary/CVSS-reality discrepancy (similar pattern noted previously for CVE-2026-47627)"
+    ],
+    "file_name": "CVE-2026-24227.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-24157",
     "title": "NVIDIA NeMo Framework Insecure Checkpoint Deserialization Remote Code Execution",
     "published": "2026-03-24",
@@ -2192,6 +2378,27 @@
     "file_name": "CVE-2025-59459.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24233",
+    "title": "NVIDIA TensorRT-LLM Restricted Unpickler Deserialization Flaw Enabling Local Privilege Escalation and Code Execution",
+    "published": "2026-07-14",
+    "score": 8.4,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "model weight deserialization",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-24233.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-33177",
     "title": "NVIDIA Jetson Linux IGX OS NvMap Improper Memory Tracking Denial-of-Service",
     "published": "2025-10-14",
@@ -2213,6 +2420,27 @@
       "local-DoS"
     ],
     "file_name": "CVE-2025-33177.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-24268",
+    "title": "NVIDIA TensorRT Heap-Based Buffer Overflow via Malicious Model File Enabling Code Execution and Data Tampering",
+    "published": "2026-07-14",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT",
+      "malicious model file",
+      "heap-based buffer overflow",
+      "shares NVIDIA Security Bulletin a_id/5855 with CVE-2026-24238, CVE-2026-24272, CVE-2026-24227"
+    ],
+    "file_name": "CVE-2026-24268.pavd.json"
   },
   {
     "cve_id": "CVE-2025-8748",
@@ -2300,6 +2528,26 @@
     "file_name": "CVE-2026-24162.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47470",
+    "title": "NVIDIA TensorRT-LLM gRPC Chat API Improper Input Validation Enabling Local Denial of Service",
+    "published": "2026-07-14",
+    "score": 6.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "gRPC chat API",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-47470.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-24212",
     "title": "NVIDIA Isaac Launchable Linux Cleartext Sensitive Information Transmission Code Execution",
     "published": "2026-05-26",
@@ -2338,6 +2586,26 @@
       "service-robot-web-interface"
     ],
     "file_name": "CVE-2025-3572.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47628",
+    "title": "NVIDIA Triton Inference Server Unauthenticated Uncontrolled Resource Allocation Enabling Denial of Service",
+    "published": "2026-08-18",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLOps inference server",
+      "part of NVIDIA Security Bulletin 5865 cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
+    ],
+    "file_name": "CVE-2026-47628.pavd.json"
   },
   {
     "cve_id": "CVE-2026-2394",
@@ -2972,6 +3240,27 @@
     "file_name": "CVE-2024-52331.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47475",
+    "title": "NVIDIA TensorRT-LLM OpenAI-Compatible Inference API Reachable Assertion Enabling Local Denial of Service",
+    "published": "2026-07-14",
+    "score": 6.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "OpenAI-compatible API",
+      "sampler thread",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47473)"
+    ],
+    "file_name": "CVE-2026-47475.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1078",
     "title": "Pegasystems Pega Robotic Automation Browser Extension Arbitrary File Write via Malicious Website",
     "published": "2026-04-07",
@@ -3139,6 +3428,27 @@
       "authorization-bypass"
     ],
     "file_name": "CVE-2026-32905.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-24272",
+    "title": "NVIDIA TensorRT Second Heap-Based Buffer Overflow via Malicious Model File Enabling Code Execution and Data Tampering",
+    "published": "2026-07-14",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT",
+      "malicious model file",
+      "heap-based buffer overflow",
+      "shares NVIDIA Security Bulletin a_id/5855 with CVE-2026-24268, CVE-2026-24238, CVE-2026-24227"
+    ],
+    "file_name": "CVE-2026-24272.pavd.json"
   },
   {
     "cve_id": "CVE-2026-2246",
@@ -3400,6 +3710,26 @@
       "CRL"
     ],
     "file_name": "CVE-2025-67108.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47473",
+    "title": "NVIDIA TensorRT-LLM Write-What-Where Condition Enabling Local Code Execution and Memory Corruption",
+    "published": "2026-07-14",
+    "score": 7.4,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "write-what-where",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47475)"
+    ],
+    "file_name": "CVE-2026-47473.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7414",
@@ -3880,6 +4210,26 @@
     "file_name": "CVE-2025-10571.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-24259",
+    "title": "NVIDIA TensorRT-LLM Missing Authentication for Critical Function Enabling Code Execution and Data Tampering",
+    "published": "2026-07-14",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "missing authentication",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -47470, -47471, -47472, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-24259.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-24153",
     "title": "NVIDIA Jetson Linux initrd nvluks Trusted Application Not Disabled Information Disclosure",
     "published": "2026-03-31",
@@ -4282,6 +4632,32 @@
     "file_name": "CVE-2026-41551.pavd.json"
   },
   {
+    "cve_id": "CVE-2023-52660",
+    "title": "Linux Kernel rkisp1 Driver Shared IRQ Handling SoC Hang Denial of Service",
+    "published": "2024-05-17",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Linux kernel",
+      "Rockchip (ISP1 hardware)"
+    ],
+    "tags": [
+      "Linux kernel",
+      "rkisp1",
+      "Rockchip",
+      "V4L2",
+      "CWE-662",
+      "IRQF_SHARED",
+      "embedded vision",
+      "SoC hang",
+      "power management race condition"
+    ],
+    "file_name": "CVE-2023-52660.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-0898",
     "title": "Pegasystems Pega Robot Studio Browser Extension Arbitrary File Write via Malicious Website",
     "published": "2026-03-23",
@@ -4299,6 +4675,27 @@
       "supply-chain-risk"
     ],
     "file_name": "CVE-2026-0898.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47627",
+    "title": "NVIDIA Triton Inference Server Unauthenticated Path Traversal Enabling Full Server Compromise and Denial of Service",
+    "published": "2026-08-18",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLOps inference server",
+      "most severe member of NVIDIA Security Bulletin 5865 path-traversal cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
+    ],
+    "file_name": "CVE-2026-47627.pavd.json"
   },
   {
     "cve_id": "CVE-2026-24228",
@@ -4386,6 +4783,27 @@
     "file_name": "CVE-2025-33184.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47606",
+    "title": "NVIDIA Triton Inference Server Absolute Path Traversal Enabling Remote Code Execution and Information Disclosure",
+    "published": "2026-08-18",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA Triton Inference Server",
+      "MLOps inference server",
+      "part of NVIDIA Security Bulletin 5865 path-traversal cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
+    ],
+    "file_name": "CVE-2026-47606.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-6073",
     "title": "ABB RMC-100 Stack-based Buffer Overflow in MQTT Broker Username/Password Fields Enables Remote Crash",
     "published": "2025-07-03",
@@ -4465,6 +4883,26 @@
       "time validation"
     ],
     "file_name": "CVE-2025-67109.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-47472",
+    "title": "NVIDIA TensorRT-LLM IPC Layer Deserialization of Untrusted Data Enabling Local Code Execution",
+    "published": "2026-07-14",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA TensorRT-LLM",
+      "IPC deserialization",
+      "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47473, -47475)"
+    ],
+    "file_name": "CVE-2026-47472.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7415",
