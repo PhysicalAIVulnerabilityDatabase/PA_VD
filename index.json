@@ -726,6 +726,25 @@
     "file_name": "CVE-2025-31362.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65082",
+    "title": "NVIDIA NemoClaw Local Code Injection via Migration Command",
+    "published": "2026-08-25",
+    "score": 7.0,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65082.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-62599",
     "title": "eProsima Fast DDS Integer Overflow in SPDP readPropertySeq Causes Remote Out-of-Memory DoS",
     "published": "2026-02-03",
@@ -746,6 +765,25 @@
       "Middleware"
     ],
     "file_name": "CVE-2025-62599.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65096",
+    "title": "NVIDIA NemoClaw OS Command Injection in Telegram Bridge Component",
+    "published": "2026-08-25",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65096.pavd.json"
   },
   {
     "cve_id": "CVE-2024-39780",
@@ -811,6 +849,25 @@
       "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47473, -47475)"
     ],
     "file_name": "CVE-2026-24220.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65089",
+    "title": "NVIDIA NemoClaw OS Command Injection via Status and Logs Plugin Commands",
+    "published": "2026-08-25",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65089.pavd.json"
   },
   {
     "cve_id": "CVE-2024-12740",
@@ -965,6 +1022,25 @@
     "file_name": "CVE-2026-47630.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65084",
+    "title": "NVIDIA NemoClaw Improper Certificate Validation in Deployment Process",
+    "published": "2026-08-25",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Distribution / Supply Chain"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65084.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-47784",
     "title": "ABB ANC Navigation Controller Unverified Password Change Authentication Bypass",
     "published": "2025-04-30",
@@ -1058,6 +1134,25 @@
       "authorization-bypass"
     ],
     "file_name": "CVE-2026-53850.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65090",
+    "title": "NVIDIA NemoClaw OS Command Injection in NIM Management Component",
+    "published": "2026-08-25",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65090.pavd.json"
   },
   {
     "cve_id": "CVE-2026-47629",
@@ -1830,6 +1925,26 @@
     "file_name": "CVE-2024-53320.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65097",
+    "title": "NVIDIA NemoClaw Installation Scripts Download Code Without Integrity Check",
+    "published": "2026-08-25",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Distribution / Supply Chain",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure",
+      "shares CWE-494 root cause with CVE-2026-65081"
+    ],
+    "file_name": "CVE-2026-65097.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-12991",
     "title": "Ghost Robotics Vision 60 Mobile App Missing Cryptographic Integrity ARP Spoofing Man-in-the-Middle Control Hijack",
     "published": "2026-07-27",
@@ -1898,6 +2013,25 @@
     "file_name": "CVE-2025-44251.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65083",
+    "title": "NVIDIA OpenShell Sandbox Provisioning API Incomplete Input Denylist Enabling Sandbox Escape",
+    "published": "2026-08-25",
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65083.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-6071",
     "title": "ABB RMC-100 Hard-coded Cryptographic Key Enables MQTT Communication Decryption",
     "published": "2025-07-03",
@@ -1932,6 +2066,26 @@
       "physical-ai-control"
     ],
     "file_name": "CVE-2026-41352.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65088",
+    "title": "NVIDIA NemoClaw Sensitive Information Exposure via Process Invocation",
+    "published": "2026-08-25",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure",
+      "related to CVE-2026-65087 (insufficiently protected credentials)"
+    ],
+    "file_name": "CVE-2026-65088.pavd.json"
   },
   {
     "cve_id": "CVE-2026-32044",
@@ -2301,6 +2455,25 @@
     "file_name": "CVE-2025-13716.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65091",
+    "title": "NVIDIA OpenShell OS Command Injection via Malicious Gateway",
+    "published": "2026-08-25",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65091.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1612",
     "title": "AL-KO Robolinho Update Software Hard-Coded AWS Credentials Cloud Storage Exposure",
     "published": "2026-03-30",
@@ -2361,6 +2534,25 @@
       "skill-dispatch"
     ],
     "file_name": "CVE-2026-53845.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65085",
+    "title": "NVIDIA OpenShell Inference Proxy Improper Output Encoding Leading to Data Tampering",
+    "published": "2026-08-25",
+    "score": 5.2,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "AI/ML Runtime / Inference"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65085.pavd.json"
   },
   {
     "cve_id": "CVE-2025-59459",
@@ -2706,6 +2898,25 @@
       "SSRF"
     ],
     "file_name": "CVE-2026-32041.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65099",
+    "title": "NVIDIA NemoClaw OS Command Injection via Command-Line Interface",
+    "published": "2026-08-25",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65099.pavd.json"
   },
   {
     "cve_id": "CVE-2021-47664",
@@ -3789,6 +4000,26 @@
     "file_name": "CVE-2025-3753.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65086",
+    "title": "NVIDIA OpenShell Sandbox Exec Handler OS Command Injection",
+    "published": "2026-08-25",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure",
+      "related to CVE-2026-65091 (OpenShell gateway command injection)"
+    ],
+    "file_name": "CVE-2026-65086.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-1743",
     "title": "DJI Mavic Mini, Air, Spark and Mini SE Enhanced Wi-Fi Pairing Authentication Bypass by Capture-Replay",
     "published": "2026-02-02",
@@ -3907,6 +4138,44 @@
       "research-robot-security"
     ],
     "file_name": "CVE-2025-45466.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65092",
+    "title": "NVIDIA OpenShell Sandbox Path Traversal Bypassing L7 REST Network Policy",
+    "published": "2026-08-25",
+    "score": 8.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65092.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65098",
+    "title": "NVIDIA NemoClaw Weak Authentication in Remote-Access Helper Workflow",
+    "published": "2026-08-25",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65098.pavd.json"
   },
   {
     "cve_id": "CVE-2025-33182",
@@ -4267,6 +4536,25 @@
       "CWE-502 cluster with CVE-2026-24157, CVE-2026-24228, CVE-2026-24162"
     ],
     "file_name": "CVE-2026-24237.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65081",
+    "title": "NVIDIA NemoClaw Untrusted Code Execution via Unverified Installation Process",
+    "published": "2026-08-25",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Distribution / Supply Chain",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65081.pavd.json"
   },
   {
     "cve_id": "CVE-2026-41386",
@@ -4840,6 +5128,25 @@
     "file_name": "CVE-2026-1579.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65105",
+    "title": "NVIDIA NemoClaw Missing Authentication on Inference Server Exposing Unauthenticated Access",
+    "published": "2026-08-25",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65105.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-13777",
     "title": "ABB AWIN GW100 GW120 IIoT Gateway Authentication Bypass Capture Replay",
     "published": "2026-03-13",
@@ -5066,6 +5373,44 @@
       "part of a cluster of PX4 MAVLink-subsystem vulnerabilities patched around the PX4 1.17.0 release cycle (CVE-2026-32713, CVE-2026-32724, CVE-2026-32743)"
     ],
     "file_name": "CVE-2026-32743.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65093",
+    "title": "NVIDIA OpenShell Sandbox Escape via Uncontrolled Search Path Element",
+    "published": "2026-08-25",
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65093.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-65087",
+    "title": "NVIDIA NemoClaw Insufficiently Protected Credentials Disclosure",
+    "published": "2026-08-25",
+    "score": 5.6,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA advisory bulletin 2026/5872",
+      "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
+    ],
+    "file_name": "CVE-2026-65087.pavd.json"
   },
   {
     "cve_id": "CVE-2025-63547",
