@@ -4171,6 +4171,30 @@
     "file_name": "CVE-2026-55393.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-86793",
+    "title": "SGLang SafeUnpickler Builtins Allowlist Bypass Enables Unauthenticated Remote Code Execution on LLM Inference Servers",
+    "published": "2026-09-11",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure",
+      "Embodied AI Agent"
+    ],
+    "vendors": [
+      "SGLang (sgl-project / LMSYS)"
+    ],
+    "tags": [
+      "AI inference framework",
+      "LLM serving",
+      "Python pickle deserialization",
+      "Patch bypass of CVE-2025-10164",
+      "Default-insecure admin endpoint",
+      "AI/ML supply chain"
+    ],
+    "file_name": "CVE-2026-86793.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-67108",
     "title": "eProsima Fast-DDS v3.3 Certificate Revocation Validation Bypass Insecure Communications",
     "published": "2025-12-23",
