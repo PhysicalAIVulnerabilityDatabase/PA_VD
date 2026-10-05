@@ -82,26 +82,23 @@
   },
   {
     "cve_id": "CVE-2026-53605",
-    "title": "Pollen Robotics Reachy Mini Wireless OS Unrestricted sudo systemctl Grant Local Privilege Escalation",
-    "published": "2026-06-11",
+    "title": "Pollen Robotics Reachy Mini Wireless OS Overly Broad Sudoers systemctl Entry Local Privilege Escalation to Root",
+    "published": "2026-09-30",
     "score": 7.8,
     "severity": "HIGH",
     "domains": [
-      "Service & Companion Robot"
+      "Service & Companion Robot",
+      "Cross-Domain Components"
     ],
     "vendors": [
       "Pollen Robotics"
     ],
     "tags": [
-      "Reachy Mini",
-      "Pollen Robotics",
-      "CWE-250",
-      "CWE-269",
-      "sudo misconfiguration",
-      "systemd unit file abuse",
-      "JFrog Security Research",
-      "GHSA-7rhg-9v48-x3h2",
-      "not present in NVD/MITRE as of 2026-08-11"
+      "Reachy Mini ecosystem",
+      "Raspberry Pi based robots",
+      "Linux privilege escalation",
+      "Robot OS image hardening",
+      "Chain amplifier: converts app-level foothold to root"
     ],
     "file_name": "CVE-2026-53605.pavd.json"
   },
@@ -851,6 +848,27 @@
     "file_name": "CVE-2026-24220.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-16497",
+    "title": "NVIDIA Triton Inference Server Excessive Iteration Remote Denial of Service of Model Serving",
+    "published": "2026-09-08",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "Inference server",
+      "Fleet-wide single point of failure",
+      "Sibling: CVE-2026-47625 (same NVIDIA bulletin 2026/5875)"
+    ],
+    "file_name": "CVE-2026-16497.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-65089",
     "title": "NVIDIA NemoClaw OS Command Injection via Status and Logs Plugin Commands",
     "published": "2026-08-25",
@@ -1039,6 +1057,27 @@
       "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
     ],
     "file_name": "CVE-2026-65084.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-14984",
+    "title": "Teledyne FLIR Aware2 PackBot Control Endpoints Cleartext Transmission Enabling Session Interception and Hijacking",
+    "published": "2026-10-01",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "Teleoperated UGV",
+      "Teledyne FLIR PackBot",
+      "Cleartext robot control channel",
+      "Mandiant disclosure"
+    ],
+    "file_name": "CVE-2026-14984.pavd.json"
   },
   {
     "cve_id": "CVE-2024-47784",
@@ -1709,6 +1748,28 @@
     "file_name": "CVE-2026-66404.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-55396",
+    "title": "Teledyne FLIR Aware2 PackBot and FirstLook Cleartext OCU-to-Robot UDP Control Traffic Without Integrity Check Allowing Command Hijacking and Modification",
+    "published": "2026-10-01",
+    "score": 8.5,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "Teleoperated UGV",
+      "Teledyne FLIR PackBot and FirstLook",
+      "Cleartext robot control channel",
+      "Mandiant disclosure series MNDT-2026-0028 to 0032",
+      "Siblings: CVE-2026-14984, CVE-2026-55393, CVE-2026-55394, CVE-2026-55395"
+    ],
+    "file_name": "CVE-2026-55396.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-26741",
     "title": "PX4 Autopilot Auto-to-Manual Mode Switch Missing Throttle Check Enables Drone Flyaway",
     "published": "2026-03-10",
@@ -2032,6 +2093,26 @@
     "file_name": "CVE-2026-65083.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-71646",
+    "title": "Robotics-STAR-Lab RACER FastExplorationFSM optTimerCallback Uncontrolled Resource Consumption Denial of Service",
+    "published": "2026-09-11",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Robotics-STAR-Lab (SYSU STAR Group)"
+    ],
+    "tags": [
+      "UAV swarm",
+      "Academic research code deployed on real drones",
+      "Sibling CVEs: CVE-2026-71644, CVE-2026-71645 (same RACER project)"
+    ],
+    "file_name": "CVE-2026-71646.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-6071",
     "title": "ABB RMC-100 Hard-coded Cryptographic Key Enables MQTT Communication Decryption",
     "published": "2025-07-03",
@@ -2322,6 +2403,27 @@
     "file_name": "CVE-2026-7368.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-47625",
+    "title": "NVIDIA Triton Inference Server Missing Authorization Enabling Unauthorized Access to Model Serving Functions",
+    "published": "2026-09-08",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "Inference server",
+      "Missing authorization",
+      "Sibling: CVE-2026-16497 (same NVIDIA bulletin 2026/5875)"
+    ],
+    "file_name": "CVE-2026-47625.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-8235",
     "title": "8421bit MiniClaw OS Command Injection in Skill Script Handler Enables AI Agent Host Takeover",
     "published": "2026-05-10",
@@ -2343,6 +2445,28 @@
       "host RCE"
     ],
     "file_name": "CVE-2026-8235.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-96456",
+    "title": "Pollen Robotics Reachy Mini Bluetooth Service Shared Authentication Flag Authentication Bypass Enabling Nearby Command Injection",
+    "published": "2026-09-23",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Pollen Robotics"
+    ],
+    "tags": [
+      "Reachy Mini ecosystem",
+      "Bluetooth proximity attack",
+      "BlueZ GATT server",
+      "Part of 3-CVE chain with CVE-2026-55419 and CVE-2026-62661",
+      "Requires victim interaction (PIN entry)"
+    ],
+    "file_name": "CVE-2026-96456.pavd.json"
   },
   {
     "cve_id": "CVE-2026-8113",
@@ -2900,6 +3024,27 @@
     "file_name": "CVE-2026-32041.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-65102",
+    "title": "NVIDIA DeepStream Integer Overflow via Crafted Tensor Dimensions in YAML Configuration Causing Pipeline Compromise or Denial of Service",
+    "published": "2026-09-29",
+    "score": 7.8,
+    "severity": "HIGH",
+    "domains": [
+      "Cross-Domain Components",
+      "Physical AI Infrastructure"
+    ],
+    "vendors": [
+      "NVIDIA"
+    ],
+    "tags": [
+      "NVIDIA AI stack",
+      "Edge video analytics",
+      "Configuration-file attack surface",
+      "Perception pipeline"
+    ],
+    "file_name": "CVE-2026-65102.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-65099",
     "title": "NVIDIA NemoClaw OS Command Injection via Command-Line Interface",
     "published": "2026-08-25",
@@ -3303,6 +3448,27 @@
     "file_name": "CVE-2026-33574.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-86713",
+    "title": "PX4 Autopilot load_mon Module Use-After-Free in Stop Path Performance Counter Access",
+    "published": "2026-09-08",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "use-after-free",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-86713.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-26011",
     "title": "ros-navigation Nav2 AMCL Heap Out-of-Bounds Write Enables Navigation Denial of Service and Potential Code Execution",
     "published": "2026-02-12",
@@ -3529,6 +3695,49 @@
     "file_name": "CVE-2026-66407.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-55395",
+    "title": "Teledyne FLIR Aware2 PackBot and FirstLook Hardcoded Access Control Passwords Enabling Unauthorized Robot Reconfiguration",
+    "published": "2026-10-01",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "Teleoperated UGV",
+      "Teledyne FLIR PackBot and FirstLook",
+      "Hardcoded credentials",
+      "Mandiant disclosure series MNDT-2026-0028 to 0032",
+      "Siblings: CVE-2026-14984, CVE-2026-55393, CVE-2026-55394, CVE-2026-55396"
+    ],
+    "file_name": "CVE-2026-55395.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-86096",
+    "title": "PX4 Autopilot TemperatureCalibration Use-After-Free via Task Spawn Race Condition",
+    "published": "2026-09-04",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "use-after-free",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-86096.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-67111",
     "title": "OpenDDS RTPS Protocol Integer Overflow Denial of Service",
     "published": "2025-12-23",
@@ -3682,6 +3891,27 @@
     "file_name": "CVE-2026-2246.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-52482",
+    "title": "SJRC F11 SJ-GPS-PRO Drone Firmware inetd-Spawned sh_for_telnet Service Remote Sensitive Information Disclosure",
+    "published": "2026-09-09",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "SJRC"
+    ],
+    "tags": [
+      "Consumer drone",
+      "Embedded Linux firmware",
+      "Exposed telnet-style service",
+      "Independent researcher disclosure"
+    ],
+    "file_name": "CVE-2026-52482.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-22838",
     "title": "Intel RealSense Dynamic Calibrator Uncontrolled Search Path Local Privilege Escalation",
     "published": "2025-08-12",
@@ -3776,6 +4006,26 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-9225.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-71645",
+    "title": "Robotics-STAR-Lab RACER Exploration State Machine Improper Exceptional Condition Handling Denial of Service",
+    "published": "2026-09-10",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Robotics-STAR-Lab (SYSU STAR Group)"
+    ],
+    "tags": [
+      "UAV swarm",
+      "Academic research code deployed on real drones",
+      "Sibling CVEs: CVE-2026-71644, CVE-2026-71646 (same RACER project)"
+    ],
+    "file_name": "CVE-2026-71645.pavd.json"
   },
   {
     "cve_id": "CVE-2025-60595",
@@ -3900,6 +4150,27 @@
     "file_name": "CVE-2025-13819.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-55393",
+    "title": "Teledyne FLIR Aware2 Web Interface Path Traversal Exposing PackBot and FirstLook Configuration and Security Parameters",
+    "published": "2026-10-01",
+    "score": 10.0,
+    "severity": "CRITICAL",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "Teleoperated UGV",
+      "Teledyne FLIR PackBot and FirstLook",
+      "Mandiant disclosure series MNDT-2026-0028 to 0032",
+      "Siblings: CVE-2026-14984, CVE-2026-55394, CVE-2026-55395, CVE-2026-55396"
+    ],
+    "file_name": "CVE-2026-55393.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-67108",
     "title": "eProsima Fast-DDS v3.3 Certificate Revocation Validation Bypass Insecure Communications",
     "published": "2025-12-23",
@@ -3998,6 +4269,28 @@
       "developer-tool-attack"
     ],
     "file_name": "CVE-2025-3753.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-102809",
+    "title": "PX4 Autopilot file2 Test Command Stack Exhaustion via Unvalidated Write Chunk Size",
+    "published": "2026-09-29",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "stack-overflow",
+      "uncontrolled-allocation",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-102809.pavd.json"
   },
   {
     "cve_id": "CVE-2026-65086",
@@ -4118,6 +4411,29 @@
     ],
     "tags": [],
     "file_name": "CVE-2025-9228.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-96455",
+    "title": "Pollen Robotics Reachy Mini Daemon Unauthenticated App Install Endpoint Remote Code Execution on Wireless Units",
+    "published": "2026-09-23",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Service & Companion Robot",
+      "Physical AI Infrastructure",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Pollen Robotics"
+    ],
+    "tags": [
+      "Reachy Mini ecosystem",
+      "Robot app store supply chain",
+      "Hugging Face Spaces",
+      "Unauthenticated robot management API",
+      "Chainable with CVE-2026-53605"
+    ],
+    "file_name": "CVE-2026-96455.pavd.json"
   },
   {
     "cve_id": "CVE-2025-45466",
@@ -4499,6 +4815,27 @@
     "file_name": "CVE-2026-24259.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-84698",
+    "title": "PX4 Autopilot sd_bench Heap Buffer Overflow via Undersized Block Size",
+    "published": "2026-09-02",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "heap-memory-corruption",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-84698.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-24153",
     "title": "NVIDIA Jetson Linux initrd nvluks Trusted Application Not Disabled Information Disclosure",
     "published": "2026-03-31",
@@ -4740,6 +5077,28 @@
     "file_name": "CVE-2026-66406.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-55394",
+    "title": "Teledyne FLIR Aware2 PackBot Unencrypted 802.11 Network Traffic Enabling Session Interception and Hijacking",
+    "published": "2026-10-01",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "domains": [
+      "Mobile Robot & AMR",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "Teleoperated UGV",
+      "Teledyne FLIR PackBot",
+      "Unencrypted Wi-Fi",
+      "Mandiant disclosure series MNDT-2026-0028 to 0032",
+      "Siblings: CVE-2026-14984, CVE-2026-55393, CVE-2026-55395, CVE-2026-55396"
+    ],
+    "file_name": "CVE-2026-55394.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-51394",
     "title": "ArduPilot Copter Buffer Overflow in AP_MSP OSD Telemetry Component Causes Local Denial of Service",
     "published": "2026-05-13",
@@ -4920,6 +5279,27 @@
     "file_name": "CVE-2026-41551.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-86097",
+    "title": "PX4 Autopilot Null Pointer Dereference via param select Command Without Path Argument",
+    "published": "2026-09-04",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "null-pointer-dereference",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-86097.pavd.json"
+  },
+  {
     "cve_id": "CVE-2023-52660",
     "title": "Linux Kernel rkisp1 Driver Shared IRQ Handling SoC Hang Denial of Service",
     "published": "2024-05-17",
@@ -4984,6 +5364,27 @@
       "most severe member of NVIDIA Security Bulletin 5865 path-traversal cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
     ],
     "file_name": "CVE-2026-47627.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-71644",
+    "title": "Robotics-STAR-Lab RACER FSM Missing Default Case Halts Swarm Trajectory Publishing Causing Unsafe UAV Planning and Collisions",
+    "published": "2026-09-11",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Drone & Aerial Robotics",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Robotics-STAR-Lab (SYSU STAR Group)"
+    ],
+    "tags": [
+      "UAV swarm",
+      "Academic research code deployed on real drones",
+      "Safety-critical FSM",
+      "Sibling CVEs: CVE-2026-71645, CVE-2026-71646 (same RACER project)"
+    ],
+    "file_name": "CVE-2026-71644.pavd.json"
   },
   {
     "cve_id": "CVE-2026-24228",
@@ -5192,6 +5593,27 @@
     "file_name": "CVE-2025-67109.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-102808",
+    "title": "PX4 Autopilot sd_stress NULL Pointer Dereference via Unvalidated Byte Count Parameter",
+    "published": "2026-09-29",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "null-pointer-dereference",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-102808.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-47472",
     "title": "NVIDIA TensorRT-LLM IPC Layer Deserialization of Untrusted Data Enabling Local Code Execution",
     "published": "2026-07-14",
@@ -5210,6 +5632,28 @@
       "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47473, -47475)"
     ],
     "file_name": "CVE-2026-47472.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85428",
+    "title": "MOOS core-moos MOOSDB HTTP Server Missing Authentication Allows Unauthenticated Actuator and Override Variable Writes",
+    "published": "2026-09-03",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "themoos (MOOS project)"
+    ],
+    "tags": [
+      "Robotics middleware",
+      "MOOS-IvP ecosystem",
+      "Marine autonomy (inferred)",
+      "Unauthenticated command channel",
+      "Sibling of ROS/DDS no-auth issues"
+    ],
+    "file_name": "CVE-2026-85428.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7415",
@@ -5392,6 +5836,28 @@
       "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
     ],
     "file_name": "CVE-2026-65093.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-86714",
+    "title": "PX4 Autopilot netman Stack Buffer Over-Read via Unvalidated Interface Name Length",
+    "published": "2026-09-08",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "domains": [
+      "Drone & Aerial Robotics"
+    ],
+    "vendors": [
+      "PX4 (Dronecode Foundation / Auterion)"
+    ],
+    "tags": [
+      "PX4",
+      "drone-autopilot-firmware",
+      "stack-buffer-over-read",
+      "information-disclosure",
+      "VulnCheck-2026-PX4-disclosure-batch",
+      "MAVLink-shell-exposure"
+    ],
+    "file_name": "CVE-2026-86714.pavd.json"
   },
   {
     "cve_id": "CVE-2026-65087",
