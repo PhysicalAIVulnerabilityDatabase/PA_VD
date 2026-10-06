@@ -40,6 +40,51 @@
     "file_name": "CVE-2024-9876.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85434",
+    "title": "MOOS-IvP uFldShoreBroker Unverified NODE_BROKER_PING Enables Bridge Route Injection and Variable Redirection",
+    "published": "2026-09-03",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "traffic-redirection",
+      "mitm-like"
+    ],
+    "file_name": "CVE-2026-85434.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-93291",
+    "title": "Eufy Omni C20 Improper Certificate Validation Enables Man-in-the-Middle Arbitrary Code Execution",
+    "published": "2026-09-24",
+    "score": 9.4,
+    "severity": "CRITICAL",
+    "domains": [
+      "Service & Companion Robot",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Eufy (Anker)"
+    ],
+    "tags": [
+      "consumer-robot",
+      "robot-vacuum",
+      "tls-validation",
+      "mitm",
+      "same-advisory-as-CVE-2026-93289",
+      "same-advisory-as-CVE-2026-93290"
+    ],
+    "file_name": "CVE-2026-93291.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-41909",
     "title": "OpenClaw Improper Authorization in Paired-Device Pairing Management Allows Cross-Request Interference",
     "published": "2026-04-23",
@@ -1019,6 +1064,28 @@
     "file_name": "CVE-2025-7677.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85448",
+    "title": "MOOS-IvP uFldShoreBroker Unbounded Community State Retention Memory Exhaustion",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "resource-exhaustion"
+    ],
+    "file_name": "CVE-2026-85448.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-47630",
     "title": "NVIDIA Triton Inference Server Local Absolute Path Traversal Enabling Information Disclosure and Potential Code Execution",
     "published": "2026-08-18",
@@ -1038,6 +1105,49 @@
       "part of NVIDIA Security Bulletin 5865 path-traversal cluster (CVE-2026-47606, -47627, -47628, -47629, -47630)"
     ],
     "file_name": "CVE-2026-47630.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2024-42002",
+    "title": "ROS 2 ros2topic hz --filter eval() Code Injection Local Arbitrary Code Execution",
+    "published": "2026-09-28",
+    "score": 8.4,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Cross-Domain Components"
+    ],
+    "vendors": [
+      "Open Source Robotics Foundation"
+    ],
+    "tags": [
+      "ros2",
+      "eval-injection",
+      "developer-tooling",
+      "cross-robot-stack"
+    ],
+    "file_name": "CVE-2024-42002.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85426",
+    "title": "MOOS-IvP uMemWatch OS Command Injection via MOOS Client Names Remote Code Execution",
+    "published": "2026-09-03",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "command-injection",
+      "rce"
+    ],
+    "file_name": "CVE-2026-85426.pavd.json"
   },
   {
     "cve_id": "CVE-2026-65084",
@@ -1232,6 +1342,29 @@
       "companion of CVE-2026-66404, CVE-2026-66405, CVE-2026-66406, CVE-2026-66407"
     ],
     "file_name": "CVE-2026-66403.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85451",
+    "title": "MOOS core-moos SuicidalSleeper Hard-Coded Multicast Passphrase Allows Remote Process Termination",
+    "published": "2026-09-03",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS project (themoos)"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "hard-coded-credentials",
+      "dos",
+      "multicast"
+    ],
+    "file_name": "CVE-2026-85451.pavd.json"
   },
   {
     "cve_id": "CVE-2025-8749",
@@ -1486,6 +1619,27 @@
     "file_name": "CVE-2025-64098.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-93290",
+    "title": "Eufy Omni C20 Hard-Coded Credentials Exposed via Log Files Allow Access to Mapping Data",
+    "published": "2026-09-24",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "domains": [
+      "Service & Companion Robot"
+    ],
+    "vendors": [
+      "Eufy (Anker)"
+    ],
+    "tags": [
+      "consumer-robot",
+      "robot-vacuum",
+      "hard-coded-credentials",
+      "same-advisory-as-CVE-2026-93291",
+      "same-advisory-as-CVE-2026-93289"
+    ],
+    "file_name": "CVE-2026-93290.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-2330",
     "title": "SICK CROWN REST Interface Incomplete Whitelist Path Traversal Unauthenticated Device Configuration Tampering",
     "published": "2026-03-06",
@@ -1503,6 +1657,29 @@
       "persistent-config-tampering"
     ],
     "file_name": "CVE-2026-2330.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-76640",
+    "title": "Unitree G1 EDU BLE GATT and Wi-Fi Provisioning Buffer Overflow Pre-Authentication Root Remote Code Execution",
+    "published": "2026-08-27",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Humanoid Robot"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "humanoid",
+      "unitree",
+      "ble",
+      "memory-corruption",
+      "root-rce",
+      "poc-available",
+      "same-product-as-CVE-2026-76639"
+    ],
+    "file_name": "CVE-2026-76640.pavd.json"
   },
   {
     "cve_id": "CVE-2026-47487",
@@ -1904,6 +2081,28 @@
     "file_name": "CVE-2026-22773.pavt.json"
   },
   {
+    "cve_id": "CVE-2026-85442",
+    "title": "MOOS core-moos MOOSCommPkt Unbounded Packet Length Allocation Pre-Authentication Denial of Service",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS project (themoos)"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "pre-auth"
+    ],
+    "file_name": "CVE-2026-85442.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-23296",
     "title": "NVIDIA Isaac-GR00T N1 Python Component Code Injection Remote Code Execution",
     "published": "2025-08-13",
@@ -1984,6 +2183,29 @@
       "research-infrastructure"
     ],
     "file_name": "CVE-2024-53320.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85438",
+    "title": "MOOS-IvP StringToIvPFunction Unvalidated Dimension Counts Cause Out-of-Bounds Write",
+    "published": "2026-09-03",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "memory-corruption",
+      "rce",
+      "integer-overflow"
+    ],
+    "file_name": "CVE-2026-85438.pavd.json"
   },
   {
     "cve_id": "CVE-2026-65097",
@@ -2091,6 +2313,26 @@
       "OpenShell/NemoClaw agentic AI toolchain co-disclosure"
     ],
     "file_name": "CVE-2026-65083.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-14983",
+    "title": "Teledyne FLIR Aware2 PackBot Missing Authentication on Reboot Endpoint Denial of Service",
+    "published": "2026-10-01",
+    "score": 7.1,
+    "severity": "HIGH",
+    "domains": [
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Teledyne FLIR"
+    ],
+    "tags": [
+      "ugv",
+      "packbot",
+      "mandiant-disclosure",
+      "same-product-as-CVE-2026-55395"
+    ],
+    "file_name": "CVE-2026-14983.pavd.json"
   },
   {
     "cve_id": "CVE-2026-71646",
@@ -2319,6 +2561,28 @@
     "file_name": "CVE-2024-47006.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85427",
+    "title": "MOOS essential-moos pAntler Unauthenticated MISSION_FILE Remote Code Execution via execvp()",
+    "published": "2026-09-03",
+    "score": 8.1,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS project (themoos)"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "rce",
+      "mission-injection"
+    ],
+    "file_name": "CVE-2026-85427.pavd.json"
+  },
+  {
     "cve_id": "CVE-2024-39835",
     "title": "ROS 1 roslaunch Eval Injection Substitution Args Mechanism Arbitrary Python Code Execution",
     "published": "2025-07-17",
@@ -2359,6 +2623,28 @@
       "SICK-sensor"
     ],
     "file_name": "CVE-2025-0867.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85449",
+    "title": "MOOS-IvP pMarineViewer Unbounded Tracked Node Identities Memory Exhaustion",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "operator-hmi"
+    ],
+    "file_name": "CVE-2026-85449.pavd.json"
   },
   {
     "cve_id": "CVE-2024-51448",
@@ -2924,6 +3210,28 @@
     "file_name": "CVE-2026-47628.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85444",
+    "title": "MOOS-IvP isQuoted/isBraced/isChevroned Buffer Over-Read Triggered by NODE_REPORT Denial of Service",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "memory-safety"
+    ],
+    "file_name": "CVE-2026-85444.pavd.json"
+  },
+  {
     "cve_id": "CVE-2026-2394",
     "title": "RTI Connext Professional Core Libraries Buffer Over-Read Remote Information Disclosure",
     "published": "2026-04-01",
@@ -3186,6 +3494,29 @@
       "local-privilege-escalation"
     ],
     "file_name": "CVE-2026-42432.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-76639",
+    "title": "Unitree G1 EDU Unauthenticated WebRTC-to-DDS Bridge and Path Traversal Root Remote Code Execution",
+    "published": "2026-08-27",
+    "score": 8.8,
+    "severity": "HIGH",
+    "domains": [
+      "Humanoid Robot",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "Unitree Robotics"
+    ],
+    "tags": [
+      "humanoid",
+      "unitree",
+      "dds",
+      "root-rce",
+      "poc-available",
+      "same-product-as-CVE-2026-76640"
+    ],
+    "file_name": "CVE-2026-76639.pavd.json"
   },
   {
     "cve_id": "CVE-2023-24011",
@@ -3761,6 +4092,29 @@
     "file_name": "CVE-2025-67111.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85430",
+    "title": "MOOS essential-moos pShare Unauthenticated UDP Datagram Republishing and Crash",
+    "published": "2026-09-03",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS project (themoos)"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "spoofing",
+      "message-injection",
+      "dos"
+    ],
+    "file_name": "CVE-2026-85430.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-64438",
     "title": "eProsima Fast-DDS RTPS GAP Submessage Out-of-Memory Denial of Service",
     "published": "2026-02-03",
@@ -3959,6 +4313,27 @@
     "file_name": "CVE-2023-47335.pavt.json"
   },
   {
+    "cve_id": "CVE-2026-74238",
+    "title": "TIER IV Nebula Vlp32Decoder Out-of-Bounds Read Injects Fabricated LiDAR Points into Autoware",
+    "published": "2026-08-17",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Autonomous Vehicle AI",
+      "Robot Operating Systems & Middleware"
+    ],
+    "vendors": [
+      "TIER IV"
+    ],
+    "tags": [
+      "autoware",
+      "lidar",
+      "sensor-integrity",
+      "ros2-driver"
+    ],
+    "file_name": "CVE-2026-74238.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-15150",
     "title": "PX4-Autopilot Stack-Based Buffer Overflow in MAVLink Log Handler Affects Nearly All Releases",
     "published": "2025-12-28",
@@ -4107,6 +4482,28 @@
     "file_name": "CVE-2025-6072.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-85447",
+    "title": "MOOS-IvP pRealm Unbounded REALMCAST_REQ Subscriptions Cause Resource Exhaustion",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "resource-exhaustion"
+    ],
+    "file_name": "CVE-2026-85447.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-33210",
     "title": "NVIDIA Isaac Lab Deserialization Remote Code Execution",
     "published": "2025-12-16",
@@ -4236,6 +4633,28 @@
       "part of a cluster of 10 TensorRT-LLM CVEs disclosed together (CVE-2026-24220, -24226, -24233, -24234, -24259, -47470, -47471, -47472, -47475)"
     ],
     "file_name": "CVE-2026-47473.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85429",
+    "title": "MOOS-IvP uFldNodeComms Unvalidated NODE_MESSAGE Source Enables Node Impersonation",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "spoofing",
+      "multi-vehicle"
+    ],
+    "file_name": "CVE-2026-85429.pavd.json"
   },
   {
     "cve_id": "CVE-2026-7414",
@@ -4627,6 +5046,27 @@
     "file_name": "CVE-2024-48852.pavd.json"
   },
   {
+    "cve_id": "CVE-2026-75112",
+    "title": "Rockwell Automation OTTO Fleet Manager Insufficient bcrypt Work Factor Weakens Stored Password Hashes",
+    "published": "2026-08-19",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "domains": [
+      "Physical AI Infrastructure",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "Rockwell Automation (OTTO Motors)"
+    ],
+    "tags": [
+      "amr-fleet",
+      "fleet-management",
+      "credential-storage",
+      "rockwell-psirt"
+    ],
+    "file_name": "CVE-2026-75112.pavd.json"
+  },
+  {
     "cve_id": "CVE-2025-14346",
     "title": "WHILL Model C2 F Electric Wheelchair Missing Bluetooth Authentication Remote Movement Control",
     "published": "2026-01-05",
@@ -4797,6 +5237,29 @@
       "no-code-signing"
     ],
     "file_name": "CVE-2026-27510.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85437",
+    "title": "MOOS-IvP IvP Function String Decoders Buffer Overflows Enable Remote Code Execution",
+    "published": "2026-09-03",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "memory-corruption",
+      "rce",
+      "log-file-parsing"
+    ],
+    "file_name": "CVE-2026-85437.pavd.json"
   },
   {
     "cve_id": "CVE-2025-10571",
@@ -5722,6 +6185,28 @@
       "unauthenticated access"
     ],
     "file_name": "CVE-2025-7679.pavd.json"
+  },
+  {
+    "cve_id": "CVE-2026-85446",
+    "title": "MOOS-IvP uFldNodeComms Quadratic Processing Denial of Service via Unbounded Node Names",
+    "published": "2026-09-03",
+    "score": 7.5,
+    "severity": "HIGH",
+    "domains": [
+      "Robot Operating Systems & Middleware",
+      "Mobile Robot & AMR"
+    ],
+    "vendors": [
+      "MOOS-IvP project"
+    ],
+    "tags": [
+      "moos-ivp",
+      "marine-autonomy",
+      "vulncheck-disclosure",
+      "dos",
+      "algorithmic-complexity"
+    ],
+    "file_name": "CVE-2026-85446.pavd.json"
   },
   {
     "cve_id": "CVE-2025-64309",
